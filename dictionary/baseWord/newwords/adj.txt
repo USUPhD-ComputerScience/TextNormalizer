@@ -283,7 +283,7 @@ famous
 fancy fanciest fancier
 fantabulous
 fantastic
-far furthest further farther
+far furthest farther further
 fast fastly faster fastest
 fat fattest fatter
 fatal
@@ -375,7 +375,7 @@ grueling gruelingly
 handy handiest handier
 happy happier happiest
 harborless
-hard harder hardest 
+hard hardest harder
 harder
 harmful
 harsh
@@ -670,7 +670,7 @@ purple
 pushy pushiest pushier
 questionable
 quick quicker quickest
-quiet quieter quietest
+quiet quietest quieter
 racist
 rancored
 rancorous

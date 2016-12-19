@@ -104,8 +104,11 @@ public class DictionaryChecker {
 		pw.close();
 	}
 
+	// elimination: remove the overlapped words in input file
 	private static void findOverlappedWords(String fileName,
-			Set<BaseWord> baseWords) throws FileNotFoundException {
+			Set<BaseWord> baseWords, boolean elimination)
+			throws FileNotFoundException {
+		Set<String> wordSet = new HashSet<String>();
 		Scanner br = null;
 		br = new Scanner(new FileReader(fileName));
 		String POS = getPOSfromFilename(fileName);
@@ -116,11 +119,22 @@ public class DictionaryChecker {
 				bword.onCreate(words[0], POS);
 				if (baseWords.contains(bword)) {
 					System.out.println(bword.toFullTextForm());
+				} else {
+					wordSet.add(words[0]);
 				}
+
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		br.close();
+		if (elimination) {
+			PrintWriter pw = new PrintWriter(new File(fileName));
+			for (String word : wordSet) {
+				pw.println(word);
+			}
+			pw.close();
 		}
 		System.out.println("Done!");
 	}
@@ -140,13 +154,11 @@ public class DictionaryChecker {
 	public static void main(String[] args) throws FileNotFoundException {
 
 		Set<BaseWord> basewordSet = findDuplications(
-				"dictionary/baseWord/newwords/verb.txt",
-				true);
-		findOverlappedWords(
-				"dictionary/baseWord/wordnet/verb_irr.txt",
-				basewordSet);
-//		reworkWordNetIrregulars(
-//				"D:\\EclipseWorkspace\\KeywordAnalysisForReview\\lib\\dictionary\\baseWord\\wordnet\\verb_irr.txt",
-//				true);
+				"dictionary/baseWord/newwords/adj.txt", true);
+		findOverlappedWords("dictionary/baseWord/wordnet/adv.txt", basewordSet,
+				false);
+		// reworkWordNetIrregulars(
+		// "D:\\EclipseWorkspace\\KeywordAnalysisForReview\\lib\\dictionary\\baseWord\\wordnet\\verb_irr.txt",
+		// true);
 	}
 }
