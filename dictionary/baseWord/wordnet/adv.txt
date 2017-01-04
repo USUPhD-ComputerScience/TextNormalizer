@@ -44,7 +44,6 @@ movingly
 demonstratively
 banteringly
 irritably
-after
 facetiously
 uncomparably
 soughingly
@@ -2127,7 +2126,6 @@ biradially
 tepidly
 solidly
 haply
-before
 frontward
 benevolently
 binaurally
@@ -3052,7 +3050,6 @@ drably
 wheresoever
 earnestly
 questioningly
-also
 fruitfully
 praiseworthily
 intensively

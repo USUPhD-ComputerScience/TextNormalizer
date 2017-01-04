@@ -201,6 +201,8 @@ public class TextNormalizer {
 	// will return null if this text is not english
 	private String[] preprocessAndSplitToTaggedTokens(String input) {
 		NatureLanguageProcessor nlp = NatureLanguageProcessor.getInstance();
+		// 0th step: lower case
+		input = input.toLowerCase();
 		// 1st step: replace words with a mapper, keep the whole format
 		List<String> tokens = NatureLanguageProcessor.wordSplit(input);
 		List<String> correctedTokens = nlp.correctUsingMap(tokens);
@@ -212,8 +214,7 @@ public class TextNormalizer {
 		// System.out.println(text);
 		// 3rd step: tag the whole thing
 		String taggedText = nlp.findPosTag(text);
-
-		System.out.println(taggedText);
+		debug_println(taggedText);
 		// 4th step: stem and correct every words.
 		String[] taggedTokens = taggedText.split("\\s+");
 		return taggedTokens;

@@ -96,7 +96,7 @@ public class NatureLanguageProcessor {
 	private NatureLanguageProcessor() {
 		readStopWordsFromFile();
 		PoSTagger = new MaxentTagger(
-				"dictionary/POS/english-left3words-distsim.tagger");
+				TextNormalizer.getDictionaryDirectory()+"POS/english-left3words-distsim.tagger");
 		try {
 			loadCorrectionMap(new File(TextNormalizer.getDictionaryDirectory()+"Map/wordMapper.txt"),
 					new File(TextNormalizer.getDictionaryDirectory()+"Map/posMapper.txt"));
