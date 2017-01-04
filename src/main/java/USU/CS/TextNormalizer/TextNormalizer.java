@@ -3,9 +3,11 @@ package USU.CS.TextNormalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 import USU.CS.NLP.CustomStemmer;
 import USU.CS.NLP.NatureLanguageProcessor;
+import USU.CS.NLP.SymSpell;
 import USU.CS.Utils.Util;
 
 public class TextNormalizer {
@@ -25,15 +27,47 @@ public class TextNormalizer {
 		return correctedTaggedText;
 	}
 
-	
+	// check for non-english text using the method proposed in our publication
+	// biproportionThreshold: ratio of pair of english words to all words,
+	// suggest using 0.4
+	// uniproportionThreshold: ratio of single english words to all words,
+	// suggest using 0.5
+	public static boolean isNonEnglish(List<String> wordList,
+			double biproportionThreshold, double uniproportionThreshold) {
+		Set<String> realDictionary = SymSpell.getInstance().getDictionary();
+		double totalScore = 0, bigramScore = 0, unigramScore = 0;
+		boolean previousInDic = false;
+		for (String word : wordList) {
+			double score = 1.0;
+			if (realDictionary.contains(word)) {
+				// score /= Math.log(wCount);
+				unigramScore += score;
+				if (previousInDic)
+					bigramScore += score;
+				previousInDic = true;
+			} else
+				previousInDic = false;
+
+			totalScore += score;
+		}
+		double biproportion = bigramScore / totalScore;
+		double uniproportion = unigramScore / totalScore;
+		if (biproportion < biproportionThreshold
+				&& uniproportion < uniproportionThreshold)
+			return true;
+		return false;
+	}
+
 	// split text into sentence using end-of-sentence indicator: . ; ! ?
-	// The text inside parentheses is accounted as new, separated sentences. 
+	// The text inside parentheses is accounted as new, separated sentences.
 	// The following example shows how it works:
-	// Original: Angry birds I love the new levels they (the new level. I meant the new levels) are very challenging.
+	// Original: Angry birds I love the new levels they (the new level. I meant
+	// the new levels) are very challenging.
 	// Ordered output:
-	//	1. the_NN new_JJ level_NN
-	//  2. i_PRP mean_VB the_NN new_JJ level_NN
-	//  3. angry_JJ bird_VB i_PRP love_VB the_NN new_JJ level_NN they_PRP be_VB very_NN challenging_JJ
+	// 1. the_NN new_JJ level_NN
+	// 2. i_PRP mean_VB the_NN new_JJ level_NN
+	// 3. angry_JJ bird_VB i_PRP love_VB the_NN new_JJ level_NN they_PRP be_VB
+	// very_NN challenging_JJ
 	public static List<List<String>> normalize_SplitSentence(String input) {
 		String[] taggedTokens = preprocessAndSplitToTaggedTokens(input);
 
@@ -85,6 +119,11 @@ public class TextNormalizer {
 
 			}
 		}
+		if (inParenthesesSentence != null) {
+			correctedTaggedSentences
+					.add(Util.deepCopyList(inParenthesesSentence));
+			sentence = null;
+		}
 		if (sentence != null) {
 			correctedTaggedSentences.add(Util.deepCopyList(sentence));
 			sentence = null;
@@ -103,7 +142,7 @@ public class TextNormalizer {
 		// System.out.println(text);
 		// 2nd step: tag the whole thing
 		String taggedText = nlp.findPosTag(text);
-		
+
 		System.out.println(taggedText);
 		// 3rd step: stem and correct every words.
 		String[] taggedTokens = taggedText.split("\\s+");

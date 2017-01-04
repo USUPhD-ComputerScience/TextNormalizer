@@ -14,6 +14,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 import org.apache.commons.collections.comparators.ComparatorChain;
 
@@ -32,6 +33,9 @@ public class SymSpell implements Serializable {
 	public static final String TRAINDIRECTORY = "dictionary/correctorTraining/";
 	private static SymSpell instance = null;
 
+	public Set<String> getDictionary(){
+		return baseDictionary.keySet();
+	}
 	public static SymSpell getInstance() {
 		if (instance == null) {
 			instance = new SymSpell();
