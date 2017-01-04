@@ -29,7 +29,7 @@ public class TextNormalizer {
 	}
 
 	public void readConfigINI(String fileName) throws FileNotFoundException {
-		System.out.println("Reading configuration file at "+ fileName);
+		System.out.println("Reading configuration file at " + fileName);
 		Scanner br = new Scanner(new File(fileName));
 		while (br.hasNextLine()) {
 			String item = br.nextLine();
@@ -71,8 +71,11 @@ public class TextNormalizer {
 		return instance;
 	}
 
+	// will return null if the text is not english
 	public String normalize(String input) {
 		String[] taggedTokens = preprocessAndSplitToTaggedTokens(input);
+		if (taggedTokens == null)
+			return null;
 		List<String> correctedTaggedTokens = new ArrayList<>();
 		CustomStemmer stemmer = CustomStemmer.getInstance();
 		for (String taggedTok : taggedTokens) {
@@ -128,9 +131,11 @@ public class TextNormalizer {
 	// 2. i_PRP mean_VB the_NN new_JJ level_NN
 	// 3. angry_JJ bird_VB i_PRP love_VB the_NN new_JJ level_NN they_PRP be_VB
 	// very_NN challenging_JJ
+	// will return null if the text is not english
 	public List<List<String>> normalize_SplitSentence(String input) {
 		String[] taggedTokens = preprocessAndSplitToTaggedTokens(input);
-
+		if (taggedTokens == null)
+			return null;
 		List<List<String>> correctedTaggedSentences = new ArrayList<>();
 		CustomStemmer stemmer = CustomStemmer.getInstance();
 		List<String> sentence = null;
@@ -193,25 +198,31 @@ public class TextNormalizer {
 		return correctedTaggedSentences;
 	}
 
+	// will return null if this text is not english
 	private String[] preprocessAndSplitToTaggedTokens(String input) {
 		NatureLanguageProcessor nlp = NatureLanguageProcessor.getInstance();
 		// 1st step: replace words with a mapper, keep the whole format
 		List<String> tokens = NatureLanguageProcessor.wordSplit(input);
 		List<String> correctedTokens = nlp.correctUsingMap(tokens);
 		String text = NatureLanguageProcessor.mergeIntoText(correctedTokens);
+		// 2nd step: check if this is a non-English text, if yes then
+		// discontinue
+		if (isNonEnglish(correctedTokens, 0.4, 0.5))
+			return null;
 		// System.out.println(text);
-		// 2nd step: tag the whole thing
+		// 3rd step: tag the whole thing
 		String taggedText = nlp.findPosTag(text);
 
 		System.out.println(taggedText);
-		// 3rd step: stem and correct every words.
+		// 4th step: stem and correct every words.
 		String[] taggedTokens = taggedText.split("\\s+");
 		return taggedTokens;
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
 		TextNormalizer normalizer = TextNormalizer.getInstance();
-		normalizer.readConfigINI("D:\\EclipseWorkspace\\TextNormalizer\\config.INI");
+		normalizer.readConfigINI(
+				"D:\\EclipseWorkspace\\TextNormalizer\\config.INI");
 		normalizer.normalize_SplitSentence(
 				"Angry birds I love the new levels they (the new level. I meant the new levels) are very challenging . You should make more levels . I love angry birds.And you should sign with sponge bob squarepants for an app .And you should youse Billy Joel music for your background sound.");
 	}
