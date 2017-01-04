@@ -57,27 +57,29 @@ public class DictionaryChecker {
 		return basewordSet;
 	}
 
-	private static void removeWordsWithDash(String fileName) throws FileNotFoundException{
+	private static void removeWordsWithDash(String fileName)
+			throws FileNotFoundException {
 		int linecount = 0;
 		Set<String> lines = new HashSet<>();
 		Scanner br = null;
 		br = new Scanner(new FileReader(fileName));
 		while (br.hasNextLine()) {
 			String line = br.nextLine();
-			if(line.contains("-"))
+			if (line.contains("-"))
 				continue;
 			lines.add(line.toLowerCase());
 			linecount++;
 		}
 		br.close();
-		
+
 		PrintWriter pw = new PrintWriter(new File(fileName));
-		for(String line : lines){
+		for (String line : lines) {
 			pw.println(line);
 		}
 		pw.close();
 		System.out.println(linecount);
 	}
+
 	private static void reworkWordNetIrregulars(String fileName,
 			boolean writeDown) throws FileNotFoundException {
 		int wordcount = 0;
@@ -129,8 +131,9 @@ public class DictionaryChecker {
 	private static void findOverlappedWords(String fileName,
 			Set<BaseWord> baseWords, boolean elimination)
 			throws FileNotFoundException {
-		Set<String> wordSet = new HashSet<String>();
+		int count = 0;
 		Scanner br = null;
+		Map<String, BaseWord> basewordSet = new HashMap<>();
 		br = new Scanner(new FileReader(fileName));
 		String POS = getPOSfromFilename(fileName);
 		while (br.hasNextLine()) {
@@ -141,7 +144,21 @@ public class DictionaryChecker {
 				if (baseWords.contains(bword)) {
 					System.out.println(bword.toFullTextForm());
 				} else {
-					wordSet.add(words[0]);
+					bword = basewordSet.get(words[0]);
+					if (bword == null) {
+						bword = new BaseWord();
+						bword.onCreate(words[0], POS);
+						basewordSet.put(words[0], bword);
+						count++;
+					}
+					for (int i = 1; i < words.length; i++) {
+						if (words[i].length() > 1) {
+							Variant var = new Variant();
+							var.onCreate(words[i], "UNKNOWN");
+							bword.addVariant(var);
+							count++;
+						}
+					}
 				}
 
 			} catch (Exception e) {
@@ -151,13 +168,9 @@ public class DictionaryChecker {
 		}
 		br.close();
 		if (elimination) {
-			PrintWriter pw = new PrintWriter(new File(fileName));
-			for (String word : wordSet) {
-				pw.println(word);
-			}
-			pw.close();
+			sortAndWriteWordListToFile(fileName, basewordSet.values());
 		}
-		System.out.println("Done! + "+fileName);
+		System.out.println("Done! " + count + " " + fileName);
 	}
 
 	private static String getPOSfromFilename(String fileName) {
@@ -173,25 +186,25 @@ public class DictionaryChecker {
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
-		//removeWordsWithDash("dictionary/baseWord/wordnet/adv.txt");
+		// removeWordsWithDash("dictionary/baseWord/wordnet/adv.txt");
 		Set<BaseWord> basewordSet = findDuplications(
-				"dictionary/baseWord/misc/connectors.txt", false);
+				"dictionary/baseWord/misc/wh.txt", false);
 		findOverlappedWords("dictionary/baseWord/wordnet/adj.txt", basewordSet,
 				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/adj_irr.txt", basewordSet,
-				true);
+		findOverlappedWords("dictionary/baseWord/wordnet/adj_irr.txt",
+				basewordSet, true);
 		findOverlappedWords("dictionary/baseWord/wordnet/adv.txt", basewordSet,
 				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/adv_irr.txt", basewordSet,
-				true);
+		findOverlappedWords("dictionary/baseWord/wordnet/adv_irr.txt",
+				basewordSet, true);
 		findOverlappedWords("dictionary/baseWord/wordnet/noun.txt", basewordSet,
 				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/noun_irr.txt", basewordSet,
-				true);
+		findOverlappedWords("dictionary/baseWord/wordnet/noun_irr.txt",
+				basewordSet, true);
 		findOverlappedWords("dictionary/baseWord/wordnet/verb.txt", basewordSet,
 				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/verb_irr.txt", basewordSet,
-				true);
+		findOverlappedWords("dictionary/baseWord/wordnet/verb_irr.txt",
+				basewordSet, true);
 		// reworkWordNetIrregulars(
 		// "D:\\EclipseWorkspace\\KeywordAnalysisForReview\\lib\\dictionary\\baseWord\\wordnet\\verb_irr.txt",
 		// true);

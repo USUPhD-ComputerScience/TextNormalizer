@@ -25,19 +25,22 @@ public class Util {
 		});
 		return filePaths;
 	}
-	public static <T> List<T> deepCopyList(List<T> input){
+
+	public static <T> List<T> deepCopyList(List<T> input) {
 		List<T> output = new ArrayList<>();
-		for(T item : input)
+		for (T item : input)
 			output.add(item);
 		return output;
 	}
-	public static <T> String collectionToCSVprintable(Collection<T> list){
+
+	public static <T> String collectionToCSVprintable(Collection<T> list) {
 		StringBuilder printable = new StringBuilder();
-		for(T item: list){
+		for (T item : list) {
 			printable.append("[").append(item.toString()).append("]");
 		}
 		return printable.toString();
 	}
+
 	public static String replaceSomeWords(final String text) {
 		return text.replace("n't", "not").replace("'s", "is");
 	}
@@ -52,10 +55,9 @@ public class Util {
 		}
 		return sb.toString();
 	}
-	
-	static public double log(int x, int base)
-	{
-	    return (Math.log(x) / Math.log(base));
+
+	static public double log(int x, int base) {
+		return (Math.log(x) / Math.log(base));
 	}
 
 	public static double round(double value, int places) {
@@ -157,5 +159,17 @@ public class Util {
 
 		}
 		return sb.toString();
+	}
+
+	public static boolean hasNumeric(final CharSequence input) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < input.length(); i++) {
+			final char c = input.charAt(i);
+			if (c > '0' && c < '9') {
+				return true;
+			}
+
+		}
+		return false;
 	}
 }

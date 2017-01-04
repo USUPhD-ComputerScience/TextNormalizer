@@ -1,724 +1,724 @@
-botchy
-dicey
-flinty
-southerner
-waster
-beady
-jointer
-fit
-offer
-trim
-soppy
-spiffy
-knurly
-webby
-gloomy
-raunchy
-scanty
-seconder
-springer
-saucy
-scrubby
-whimsy
-meaty
-pitchy
-snuffer
-trimer
-pearly
-tricksy
-cranky
-fleshy
-mushy
-winy
-canter
-costumer
-bosky
-flaunty
-kooky
-ghostly
-loony
-hippy
-folder
-folksy
-gamy
-downer
-teetotaler
-dressy
-guest
-canny
-dotty
-poster
-turfy
-briny
-draggy
-buster
-jerky
-jammy
-airy
-forest
-primer
-stretcher
-glossy
-souther
-swanky
-wieldy
-dainty
-grumpy
-musky
-cer
-weensy
-scraggly
-peter
-weighty
-naughty
-crummy
-mucky
-flimsy
-nitty
-salty
-acer
-retailer
-founder
-bargainer
-stingy
-scraggy
-snazzy
-tardy
-dreary
-grouty
-leary
-wordy
-lowlander
-breathy
-loopy
-mirky
-spongy
-corny
-archer
-seemly
-tubby
-cocky
-dowy
-roomy
-cozy
-earthy
-meeter
-stealthy
-easter
-glib
-murky
-deadly
-weedy
-paster
-clubby
-camper
-nutty
-lacy
-smarmy
-burry
-busty
-scruffy
-muzzy
-grotty
-planer
-ruddy
-comely
-wiry
-kindly
-pappy
-starer
-woodsy
-testy
-modeler
-seamy
-rooky
-brashy
-feller
-dumpy
-thorny
-wacky
-portly
-mouthy
-unruly
-lairy
-viewy
-shy
-gabby
-soapy
-batty
-punchy
-quaggy
-muster
-gawky
-oily
-stretchy
-passer
-woozy
-fluffy
-owner
-nippy
-recorder
-yummy
-ghastly
-attacker
-sleazy
-halfway
-ashy
-lathy
-goosy
-peachy
-gushy
-mariner
-mingy
-choosy
-blowsy
-northerner
-privateer
-bloodthirsty
-pasty
-wry
-drab
-jaggy
-vasty
-husky
-maligner
-wormy
-slim
-hardy
-chatty
-dopey
-classy
-flasher
-chilly
-springy
-throaty
-number
-rainy
-perky
-spoony
-tacky
-boozy
-goodly
-weepy
-sporty
-gory
-signer
-flossy
-dozy
-luny
-printer
-preachy
-slippy
-marshy
-snappy
-cheeky
-oozy
-misty
-hairy
-pally
-overnighter
-pulpy
-queenly
-lively
-ropy
-soggy
-crafty
-mighty
-wholesaler
-plucky
-beefy
-courtly
-sly
-floppy
-shaggy
-chunky
-grader
-matter
-slinky
-puffer
-trusty
-grubby
-spry
-wintry
-fiddly
-greasy
-pesky
-rosy
-surly
-piggy
-natty
-stringy
-porky
-touchy
-inky
-pedaler
-skewer
-vest
-gaudy
-measly
-homely
-barmy
-off
-flaggy
-scrawny
-bandy
-milcher
-platy
-sickly
-bubbly
-frowzy
-catty
-snuffy
-brawny
-plashy
-coder
-fratchy
-bunchy
-logy
-swagger
-chippy
-earthly
-milky
-laky
-frowsy
-rowdy
-mothy
-scurvy
-unhealthy
-stagy
-grisly
-patchy
-jolly
-porter
-breezy
-chancy
-glassy
-shaky
-feisty
-leggy
-downy
-thrifty
-musty
-northeasterner
-floaty
-spicy
-woody
-piny
-spooky
-tony
-thirsty
-foamy
-pithy
-header
-prompter
-foxy
-stodgy
-petty
-bitchy
-dusty
-bitty
-potty
-squashy
-lowly
-hazy
-draughty
-ranker
-dreamy
-clammy
-eerie
-sooty
-sultry
-plumber
-flabby
-burly
-rushy
-nappy
-lordly
-snowy
-weeny
-palmy
-creamer
-mangy
-spindly
-stocker
-brainy
-hoary
-pearler
-renter
-sonsy
-milker
-privy
-puffy
-pretender
-sniffy
-dun
-tidy
-edgy
-crusty
-lippy
-zippy
-slimsy
-dinky
-tetchy
-groggy
-untidy
-bushy
-giddy
-glum
-lander
-solder
-grouper
-striper
-cheery
-trendy
-rimy
-ler
-snug
-frenchy
-beater
-horsy
-shifty
-sneaker
-chewy
-wintery
-picky
-roily
-prickly
-lusty
-massy
-savvy
-shabby
-kinky
-techy
-cheesy
-groovy
-newsy
-tasty
-peppy
-foreigner
-chary
-silky
-tawdry
-crabby
-salter
-goofy
-spreader
-hind
-loather
-dandy
-manly
-fleshly
-teeny
-caster
-pudgy
-stumpy
-toper
-chintzy
-crawly
-moody
-grounder
-smug
-splashy
-skinny
-arty
-mouldy
-teenager
-gritty
-frisky
-woolly
-bother
-curly
-stormy
-manky
-dippy
-gammy
-weary
-slaphappy
-goner
-haughty
-bower
-fruity
-bleary
-faker
-stalky
-worldly
-dealer
-frizzy
-oliver
-snotty
-scungy
-sweaty
-randy
-shrubby
-shapely
-stroppy
-gauzy
-quaky
-wealthy
-cleanly
-dimer
-snatchy
-dingy
-doughty
-mousy
-blowy
-squatty
-prim
-multiplexer
-spiky
-churchy
-fatty
-tweedy
-homey
-bounder
-homer
-icy
-jazzy
-gooey
-puny
-norther
-wary
-counterfeiter
-flashy
-hammy
-hefty
-rattly
-colly
-rutty
-miffy
-seedy
-hunger
-priestly
-tinny
-crumby
-guilty
-stripy
-filmy
-horny
-frosty
-drowsy
-squat
-tangy
-crispy
-muggy
-pater
-chummy
-gummy
-pawky
-submariner
-racy
-reedy
-starry
-bonny
-interest
-tipsy
-godly
-skimpy
-finny
-lanky
-doughy
-swarthy
-sleepy
-fusty
-ungodly
-furry
-princely
-wan
-scraper
-stocky
-cracker
-fleecy
-stony
-toothy
-bony
-healthy
-sandy
-frouzy
-funky
-humpy
-jaunty
-leafy
-tatty
-crumbly
-spiny
-washy
-pricy
-yare
-smoky
-sturdy
-plummy
-ungainly
-tester
-zany
-unholy
-dewy
-modest
-blowzy
-bouncy
-hep
-backer
-gradely
-wispy
-dresser
-leveler
-brooder
-loner
-ratty
-starest
-stapler
-twiggy
-beastly
-liver
-lumpy
-rangy
-dizzy
-gassy
-slaver
-eastsider
-slaty
-moldy
-lofty
-streamy
-frizzly
-sampler
-bossy
-stately
-plumy
-mealy
-wavy
-fussy
-outsider
-bawdy
-snooty
-chesty
-dusky
-scrappy
-layer
-deserter
-creamy
-maungy
-dowdy
-queasy
-scabby
-chubby
-leaky
-witty
-insider
-catchy
-muddy
-wet
-baggy
-gusty
-rusty
-ritzy
-shirty
-streaky
-broody
-heady
-leery
-minter
-yeasty
-miser
-hasty
-juicy
-waxy
-sprightly
-grim
-grizzly
-assaulter
-broadcaster
-prissy
-sassy
-serer
-crasher
-burster
-prosy
-hip
-merry
-pussy
-whacky
-parky
-bumpy
-poky
-showy
-cagey
-sightly
-tan
-smelly
-nervy
-presenter
-foolhardy
-goer
-welsher
-liter
-balky
-podgy
-rusher
-moony
-dishy
-mainer
-halter
-daffy
-comfy
-sulky
-grassy
-opener
-boner
-dreggy
-fledgy
-clerkly
-signaler
-herby
-britisher
-hearty
-brassy
-weakly
-starchy
-baulky
-fluky
-gutsy
-rocky
-windy
-stuffy
-filthy
-leer
-bayer
-knotty
-phony
-limy
-snaky
-beery
-scaly
-talky
-polisher
-player
-drafty
-mazy
-foggy
-overcomer
-drippy
-craggy
-squiffy
-steamy
-paltry
-trader
-wily
-chuffy
-sappy
-soupy
-balmy
-edger
-runny
-biter
-nifty
-roaster
-thready
-malty
-cloudy
-bendy
-canty
-flighty
-shiny
-cosy
-mocker
-customer
+acer acer
+airy airiest airier
+archer archer
+arty artier artiest
+ashy ashiest ashier
+assaulter assaulter
+attacker attacker
+backer backer
+baggy baggier baggiest
+balky balkier balkiest
+balmy balmiest balmier
+bandy bandier bandiest
+bargainer bargainer
+barmy barmier barmiest
+batty battier battiest
+baulky baulkier baulkiest
+bawdy bawdiest bawdier
+bayer bayer
+beady beadier beadiest
+beastly beastlier beastliest
+beater beater
+beefy beefiest beefier
+beery beeriest beerier
+bendy bendier bendiest
+bitchy bitchier bitchiest
+biter biter
+bitty bittiest bittier
+bleary blearier bleariest
+bloodthirsty bloodthirstier bloodthirstiest
+blowsy blowsier blowsiest
+blowy blowiest blowier
+blowzy blowzier blowziest
+boner boner
+bonny bonniest bonnier
+bony boniest bonier
+boozy booziest boozier
+bosky boskier boskiest
+bossy bossiest bossier
+botchy botchier botchiest
+bother bother
+bouncy bouncier bounciest
+bounder bounder
+bower bower
+brainy brainiest brainier
+brashy brashier brashiest
+brassy brassiest brassier
+brawny brawniest brawnier
+breathy breathier breathiest
+breezy breezier breeziest
+briny brinier briniest
+britisher britisher
+broadcaster broadcaster
+brooder brooder
+broody broodiest broodier
+bubbly bubblier bubbliest
+bumpy bumpiest bumpier
+bunchy bunchier bunchiest
+burly burlier burliest
+burry burrier burriest
+burster burster
+bushy bushier bushiest
+buster buster
+busty bustier bustiest
+cagey cagier cagiest
+camper camper
+canny cannier canniest
+canter canter
+canty cantier cantiest
+caster caster
+catchy catchier catchiest
+catty cattiest cattier
+cer cer
+chancy chanciest chancier
+chary chariest charier
+chatty chattier chattiest
+cheeky cheekiest cheekier
+cheery cheerier cheeriest
+cheesy cheesier cheesiest
+chesty chestier chestiest
+chewy chewiest chewier
+chilly chillier chilliest
+chintzy chintzier chintziest
+chippy chippiest chippier
+choosy choosier choosiest
+chubby chubbier chubbiest
+chuffy chuffier chuffiest
+chummy chummier chummiest
+chunky chunkier chunkiest
+churchy churchier churchiest
+clammy clammier clammiest
+classy classiest classier
+cleanly cleanliest cleanlier
+clerkly clerklier clerkliest
+cloudy cloudiest cloudier
+clubby clubbier clubbiest
+cocky cockier cockiest
+coder coder
+colly collier colliest
+comely comelier comeliest
+comfy comfier comfiest
+corny cornier corniest
+costumer costumer
+cosy cosiest cosier
+counterfeiter counterfeiter
+courtly courtlier courtliest
+cozy coziest cozier
+crabby crabbiest crabbier
+cracker cracker
+crafty craftier craftiest
+craggy craggiest craggier
+cranky crankier crankiest
+crasher crasher
+crawly crawliest crawlier
+creamer creamer
+creamy creamiest creamier
+crispy crispiest crispier
+crumbly crumbliest crumblier
+crumby crumbier crumbiest
+crummy crummier crummiest
+crusty crustier crustiest
+curly curliest curlier
+customer customer
+daffy daffiest daffier
+dainty daintier daintiest
+dandy dandier dandiest
+deadly deadliest deadlier
+dealer dealer
+deserter deserter
+dewy dewiest dewier
+dicey dicier diciest
+dimer dimer
+dingy dingier dingiest
+dinky dinkiest dinkier
+dippy dippier dippiest
+dishy dishiest dishier
+dizzy dizziest dizzier
+dopey dopier dopiest
+dotty dottiest dottier
+doughty doughtier doughtiest
+doughy doughier doughiest
+dowdy dowdiest dowdier
+downer downer
+downy downiest downier
+dowy dowier dowie dowiest
+dozy doziest dozier
+drab drabbest drabber
+drafty draftier draftiest
+draggy draggiest draggier
+draughty draughtiest draughtier
+dreamy dreamier dreamiest
+dreary dreariest drearier
+dreggy dreggiest dreggier
+dresser dresser
+dressy dressier dressiest
+drippy drippiest drippier
+drowsy drowsier drowsiest
+dumpy dumpier dumpiest
+dun dunnest dunner
+dusky duskier duskiest
+dusty dustiest dustier
+earthly earthlier earthliest
+earthy earthiest earthier
+easter easter
+eastsider eastsider
+edger edger
+edgy edgiest edgier
+eerie eeriest eerier
+faker faker
+fatty fattier fattiest
+feisty feistiest feistier
+feller feller
+fiddly fiddliest fiddlier
+filmy filmiest filmier
+filthy filthiest filthier
+finny finnier finniest
+fit fittest fitter
+flabby flabbiest flabbier
+flaggy flaggier flaggiest
+flasher flasher
+flashy flashier flashiest
+flaunty flauntiest flauntier
+fledgy fledgiest fledgier
+fleecy fleecier fleeciest
+fleshly fleshliest fleshlier
+fleshy fleshiest fleshier
+flighty flightier flightiest
+flimsy flimsiest flimsier
+flinty flintier flintiest
+floaty floatiest floatier
+floppy floppiest floppier
+flossy flossier flossiest
+fluffy fluffiest fluffier
+fluky flukier flukiest
+foamy foamiest foamier
+foggy foggier foggiest
+folder folder
+folksy folksier folksiest
+foolhardy foolhardier foolhardiest
+foreigner foreigner
+forest forest
+founder founder
+foxy foxier foxiest
+fratchy fratchiest fratchier
+frenchy frenchier frenchiest
+frisky friskier friskiest
+frizzly frizzlier frizzliest
+frizzy frizzier frizziest
+frosty frostier frostiest
+frouzy frouziest frouzier
+frowsy frowsiest frowsier
+frowzy frowziest frowzier
+fruity fruitier fruitiest
+funky funkiest funkier
+furry furrier furriest
+fussy fussiest fussier
+fusty fustier fustiest
+gabby gabbiest gabbier
+gammy gammiest gammier
+gamy gamiest gamier
+gassy gassier gassiest
+gaudy gaudiest gaudier
+gauzy gauzier gauziest
+gawky gawkiest gawkier
+ghastly ghastliest ghastlier
+ghostly ghostlier ghostliest
+giddy giddiest giddier
+glassy glassier glassiest
+glib glibber glibbest
+gloomy gloomiest gloomier
+glossy glossier glossiest
+glum glummest glummer
+godly godlier godliest
+goer goer
+goner goner
+goodly goodliest goodlier
+gooey gooier gooiest
+goofy goofier goofiest
+goosy goosiest goosier
+gory goriest gorier
+gradely gradelier gradeliest
+grader grader
+grassy grassiest grassier
+greasy greasiest greasier
+grim grimmest grimmer
+grisly grisliest grislier
+gritty grittiest grittier
+grizzly grizzliest grizzlier
+groggy groggiest groggier
+groovy grooviest groovier
+grotty grottier grottiest
+grounder grounder
+grouper grouper
+grouty groutier groutiest
+grubby grubbier grubbiest
+grumpy grumpier grumpiest
+guest guest
+guilty guiltier guiltiest
+gummy gummier gummiest
+gushy gushiest gushier
+gusty gustier gustiest
+gutsy gutsiest gutsier
+hairy hairiest hairier
+halfway halfways
+halter halter
+hammy hammier hammiest
+hardy hardier hardiest
+hasty hastiest hastier
+haughty haughtier haughtiest
+hazy hazier haziest
+header header
+heady headier headiest
+healthy healthier healthiest
+hearty heartier heartiest
+hefty heftiest heftier
+hep hepper heppest
+herby herbiest herbier
+hind hinder
+hip hippest hipper
+hippy hippier hippiest
+hoary hoarier hoariest
+homely homelier homeliest
+homer homer
+homey homiest homier
+horny horniest hornier
+horsy horsier horsiest
+humpy humpiest humpier
+hunger hunger
+husky huskier huskiest
+icy iciest icier
+inky inkiest inkier
+insider insider
+interest interest
+jaggy jaggier jaggiest
+jammy jammier jammiest
+jaunty jauntier jauntiest
+jazzy jazziest jazzier
+jerky jerkier jerkiest
+jointer jointer
+jolly jollier jolliest
+juicy juicier juiciest
+kindly kindlier kindliest
+kinky kinkier kinkiest
+knotty knottier knottiest
+knurly knurlier knurliest
+kooky kookier kookiest
+lacy laciest lacier
+lairy lairiest lairier
+laky lakier lakiest
+lander lander
+lanky lankier lankiest
+lathy lathier lathiest
+layer layer
+leafy leafiest leafier
+leaky leakier leakiest
+leary leariest learier
+leer leer
+leery leeriest leerier
+leggy leggiest leggier
+ler ler
+leveler leveler
+limy limier limiest
+lippy lippier lippiest
+liter liter
+lively liveliest livelier
+liver liver
+loather loather
+lofty loftiest loftier
+logy logier logiest
+loner loner
+loony looniest loonier
+loopy loopier loopiest
+lordly lordlier lordliest
+lowlander lowlander
+lowly lowliest lowlier
+lumpy lumpier lumpiest
+luny luniest lunier
+lusty lustier lustiest
+mainer mainer
+maligner maligner
+malty maltiest maltier
+mangy mangier mangiest
+manky mankier mankiest
+manly manlier manliest
+mariner mariner
+marshy marshiest marshier
+massy massier massiest
+matter matter
+maungy maungiest maungier
+mazy mazier maziest
+mealy mealier mealiest
+measly measlier measliest
+meaty meatier meatiest
+meeter meeter
+merry merriest merrier
+miffy miffiest miffier
+mighty mightiest mightier
+milcher milcher
+milker milker
+milky milkier milkiest
+mingy mingiest mingier
+minter minter
+mirky mirkiest mirkier
+miser miser
+misty mistiest mistier
+mocker mocker
+modeler modeler
+modest modest
+moldy moldiest moldier
+moody moodier moodiest
+moony mooniest moonier
+mothy mothiest mothier
+mouldy mouldier mouldiest
+mousy mousier mousiest
+mouthy mouthier mouthiest
+mucky muckiest muckier
+muddy muddier muddiest
+muggy muggier muggiest
+multiplexer multiplexer
+murky murkier murkiest
+mushy mushier mushiest
+musky muskier muskiest
+muster muster
+musty mustier mustiest
+muzzy muzzier muzziest
+nappy nappier nappiest
+natty nattiest nattier
+naughty naughtier naughtiest
+nervy nerviest nervier
+newsy newsier newsiest
+nifty niftier niftiest
+nippy nippiest nippier
+nitty nittier nittiest
+northeasterner northeasterner
+norther norther
+northerner northerner
+number number
+nutty nuttier nuttiest
+off offer
+offer offer
+oily oilier oiliest
+oliver oliver
+oozy ooziest oozier
+opener opener
+outsider outsider
+overcomer overcomer
+overnighter overnighter
+owner owner
+pally palliest pallier
+palmy palmier palmiest
+paltry paltriest paltrier
+pappy pappiest pappier
+parky parkier parkiest
+passer passer
+paster paster
+pasty pastier pastiest
+patchy patchiest patchier
+pater pater
+pawky pawkiest pawkier
+peachy peachiest peachier
+pearler pearler
+pearly pearlier pearliest
+pedaler pedaler
+peppy peppiest peppier
+perky perkier perkiest
+pesky peskiest peskier
+peter peter
+petty pettier pettiest
+phony phoniest phonier
+picky pickiest pickier
+piggy piggiest piggier
+piny piniest pinier
+pitchy pitchiest pitchier
+pithy pithier pithiest
+planer planer
+plashy plashiest plashier
+platy platiest platier
+player player
+plucky pluckiest pluckier
+plumber plumber
+plummy plummier plummiest
+plumy plumier plumiest
+podgy podgier podgiest
+poky pokiest pokier
+polisher polisher
+porky porkiest porkier
+porter porter
+portly portliest portlier
+poster poster
+potty pottiest pottier
+preachy preachier preachiest
+presenter presenter
+pretender pretender
+prickly pricklier prickliest
+pricy pricier priciest
+priestly priestliest priestlier
+prim primmest primmer
+primer primer
+princely princelier princeliest
+printer printer
+prissy prissiest prissier
+privateer privateer
+privy privier priviest
+prompter prompter
+prosy prosier prosiest
+pudgy pudgiest pudgier
+puffer puffer
+puffy puffiest puffier
+pulpy pulpiest pulpier
+punchy punchiest punchier
+puny puniest punier
+pussy pussier pussiest
+quaggy quaggiest quaggier
+quaky quakiest quakier
+queasy queasier queasiest
+queenly queenliest queenlier
+racy raciest racier
+rainy rainier rainiest
+randy randier randiest
+rangy rangiest rangier
+ranker ranker
+rattly rattlier rattliest
+ratty rattier rattiest
+raunchy raunchier raunchiest
+recorder recorder
+reedy reediest reedier
+renter renter
+retailer retailer
+rimy rimier rimiest
+ritzy ritziest ritzier
+roaster roaster
+rocky rockier rockiest
+roily roiliest roilier
+rooky rookier rookiest
+roomy roomier roomiest
+ropy ropier ropiest
+rosy rosiest rosier
+rowdy rowdier rowdiest
+ruddy ruddiest ruddier
+runny runniest runnier
+rusher rusher
+rushy rushiest rushier
+rusty rustiest rustier
+rutty ruttier ruttiest
+salter salter
+salty saltiest saltier
+sampler sampler
+sandy sandiest sandier
+sappy sappiest sappier
+sassy sassier sassiest
+saucy sauciest saucier
+savvy savvier savviest
+scabby scabbiest scabbier
+scaly scaliest scalier
+scanty scantiest scantier
+scraggly scragglier scraggliest
+scraggy scraggiest scraggier
+scraper scraper
+scrappy scrappier scrappiest
+scrawny scrawniest scrawnier
+scrubby scrubbier scrubbiest
+scruffy scruffiest scruffier
+scungy scungiest scungier
+scurvy scurviest scurvier
+seamy seamier seamiest
+seconder seconder
+seedy seedier seediest
+seemly seemliest seemlier
+serer serer
+shabby shabbier shabbiest
+shaggy shaggier shaggiest
+shaky shakiest shakier
+shapely shapeliest shapelier
+shifty shiftiest shiftier
+shiny shinier shiniest
+shirty shirtiest shirtier
+showy showier showiest
+shrubby shrubbier shrubbiest
+shy shier shyer shiest shyest
+sickly sickliest sicklier
+sightly sightliest sightlier
+signaler signaler
+signer signer
+silky silkiest silkier
+skewer skewer
+skimpy skimpier skimpiest
+skinny skinniest skinnier
+slaphappy slaphappiest slaphappier
+slaty slatiest slatier
+slaver slaver
+sleazy sleazier sleaziest
+sleepy sleepiest sleepier
+slim slimmest slimmer
+slimsy slimsiest slimsier
+slinky slinkier slinkiest
+slippy slippier slippiest
+sly slyest sliest slier slyer
+smarmy smarmier smarmiest
+smelly smellier smelliest
+smoky smokier smokiest
+smug smugger smuggest
+snaky snakier snakiest
+snappy snappiest snappier
+snatchy snatchier snatchiest
+snazzy snazziest snazzier
+sneaker sneaker
+sniffy sniffiest sniffier
+snooty snootiest snootier
+snotty snottier snottiest
+snowy snowier snowiest
+snuffer snuffer
+snuffy snuffiest snuffier
+snug snugger snuggest
+soapy soapiest soapier
+soggy soggiest soggier
+solder solder
+sonsy sonsiest sonsier
+sooty sootiest sootier
+soppy soppiest soppier
+soupy soupier soupiest
+souther souther
+southerner southerner
+spicy spiciest spicier
+spiffy spiffier spiffiest
+spiky spikier spikiest
+spindly spindlier spindliest
+spiny spinier spiniest
+splashy splashier splashiest
+spongy spongier spongiest
+spooky spookier spookiest
+spoony spooniest spoonier
+sporty sportiest sportier
+spreader spreader
+sprightly sprightlier sprightliest
+springer springer
+springy springier springiest
+spry spriest sprier
+squashy squashier squashiest
+squat squattest squatter
+squatty squattier squattiest
+squiffy squiffier squiffiest
+stagy stagiest stagier
+stalky stalkier stalkiest
+stapler stapler
+starchy starchier starchiest
+starer starer
+starest starest
+starry starrier starriest
+stately stateliest statelier
+stealthy stealthier stealthiest
+steamy steamier steamiest
+stingy stingier stingiest
+stocker stocker
+stocky stockier stockiest
+stodgy stodgier stodgiest
+stony stonier stoniest
+stormy stormier stormiest
+streaky streakier streakiest
+streamy streamier streamiest
+stretcher stretcher
+stretchy stretchier stretchiest
+stringy stringier stringiest
+striper stiper
+stripy stripier stripiest
+stroppy stroppier stroppiest
+stuffy stuffier stuffiest
+stumpy stumpier stumpiest
+sturdy sturdier sturdiest
+submariner submariner
+sulky sulkier sulkiest
+sultry sultriest sultrier
+surly surliest surlier
+swagger swagger
+swanky swankiest swankier
+swarthy swarthiest swarthier
+sweaty sweatier sweatiest
+tacky tackiest tackier
+talky talkier talkiest
+tan tannest tanner
+tangy tangiest tangier
+tardy tardiest tardier
+tasty tastier tastiest
+tatty tattiest tattier
+tawdry tawdrier tawdriest
+techy techier techiest
+teenager teenager
+teeny teeniest teenier
+teetotaler teetotaler
+tester tester
+testy testiest testier
+tetchy tetchiest tetchier
+thirsty thirstier thirstiest
+thorny thornier thorniest
+thready threadier threadiest
+thrifty thriftiest thriftier
+throaty throatier throatiest
+tidy tidiest tidier
+tinny tinnier tinniest
+tipsy tipsier tipsiest
+tony tonier toniest
+toothy toothiest toothier
+toper toper
+touchy touchier touchiest
+trader trader
+trendy trendier trendiest
+tricksy tricksier tricksiest
+trim trimmest trimmer
+trimer trimer
+trusty trustiest trustier
+tubby tubbier tubbiest
+turfy turfier turfiest
+tweedy tweedier tweediest
+twiggy twiggier twiggiest
+ungainly ungainliest ungainlier
+ungodly ungodlier ungodliest
+unhealthy unhealthier unhealthiest
+unholy unholiest unholier
+unruly unrulier unruliest
+untidy untidiest untidier
+vasty vastiest vastier
+vest vest
+viewy viewier viewiest
+wacky wackiest wackier
+wan wannest wanner
+wary warier wariest
+washy washier washiest
+waster waster
+wavy waviest wavier
+waxy waxier waxiest
+weakly weakliest weaklier
+wealthy wealthier wealthiest
+weary weariest wearier
+webby webbiest webbier
+weedy weedier weediest
+weensy weensier weensiest
+weeny weenier weeniest
+weepy weepiest weepier
+weighty weightier weightiest
+welsher welsher
+wet wetter wettest
+whacky whackier whackiest
+whimsy whimsiest whimsier
+wholesaler wholesaler
+wieldy wieldiest wieldier
+wily wiliest wilier
+windy windier windiest
+wintery winteriest winterier
+wintry wintriest wintrier
+winy winier winiest
+wiry wiriest wirier
+wispy wispier wispiest
+witty wittier wittiest
+woodsy woodsier woodsiest
+woody woodiest woodier
+woolly woolliest woollier
+woozy wooziest woozier
+wordy wordier wordiest
+worldly worldliest worldlier
+wormy wormiest wormier
+wry wriest wryest wrier wryer
+yare yarer yarest
+yeasty yeastier yeastiest
+yummy yummiest yummier
+zany zanier zaniest
+zippy zippier zippiest

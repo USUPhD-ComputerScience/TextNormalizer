@@ -17,7 +17,7 @@ public class TextNormalizer {
 	private static TextNormalizer instance = null;
 	private static String DICTIONARY_DIRECTORY = "dictionary/";
 	private static String TRIGRAM_TRAINING_DIRECTORY = "dictionary/trigramTraning/";
-	private static boolean DEBUG = false;
+	private static boolean DEBUG = true;
 
 	private TextNormalizer() {
 		// TODO Auto-generated constructor stub
@@ -97,7 +97,7 @@ public class TextNormalizer {
 	// suggest using 0.5
 	public boolean isNonEnglish(List<String> wordList,
 			double biproportionThreshold, double uniproportionThreshold) {
-		Set<String> realDictionary = SymSpell.getInstance().getDictionary();
+		Set<String> realDictionary = SymSpell.getInstance().getFullDictionary();
 		double totalScore = 0, bigramScore = 0, unigramScore = 0;
 		boolean previousInDic = false;
 		for (String word : wordList) {
@@ -222,8 +222,8 @@ public class TextNormalizer {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		TextNormalizer normalizer = TextNormalizer.getInstance();
-		normalizer.readConfigINI(
-				"D:\\EclipseWorkspace\\TextNormalizer\\config.INI");
+		// normalizer.readConfigINI(
+		// "D:\\EclipseWorkspace\\TextNormalizer\\config.INI");
 		normalizer.normalize_SplitSentence(
 				"Angry birds I love the new levels they (the new level. I meant the new levels) are very challenging . You should make more levels . I love angry birds.And you should sign with sponge bob squarepants for an app .And you should youse Billy Joel music for your background sound.");
 	}

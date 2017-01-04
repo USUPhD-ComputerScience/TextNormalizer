@@ -17,6 +17,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 import USU.CS.Utils.POSTagConverter;
+import USU.CS.Utils.Util;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
 public class CustomStemmer {
@@ -495,7 +496,10 @@ public class CustomStemmer {
 	}
 
 	public String[] stem(String[] pair) {
-		// TODO Auto-generated method stub
+		// Do not stem if this word contains number, we have no apparent rules
+		// for such words
+		if(Util.hasNumeric(pair[0]))
+			return pair;
 		String mappedPair[] = IrregularMapper.getInstance().MapIrregular(pair);
 		if (mappedPair != null) {
 			STAT_mapperTimes++;

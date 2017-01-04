@@ -1,3 +1,95 @@
+s7562
+7562
+duos2
+n7000
+7582
+s5
+s4
+s3
+s2
+avant
+note4
+s6
+siii
+sii
+note2
+note3
+ace
+core2
+m7
+m8
+desirex
+onex
+sensation
+e8
+thunderbolt
+vivid
+sv
+wildfire
+m9
+rezound
+zenphone
+zenfone4
+zenfone
+fonepad7
+zenfone2
+zen5
+zenfone5
+transformer
+y300
+g610
+y511
+y220
+g510
+mate7
+mediapad
+gb
+gig
+5gb
+gigabyte
+1gb
+2gb
+4gb
+mb
+3gb
+pekka
+r5
+7a
+find7
+n3
+r1001
+soundcloud
+pandora
+spotify
+a850
+a706
+a390
+a369i
+s850
+a536
+s939
+a516
+s920
+a269i
+k900
+a526
+ideatab
+a3000
+p780
+p90
+s820
+p70
+p970
+e400
+g3
+g2
+venice
+l5
+z3
+z1
+z2
+zl
+zr
 1080p
 10k
 10th
@@ -11,7 +103,6 @@
 1star
 200mb
 20mb
-dev
 20th
 21st
 240p
@@ -38,20 +129,9 @@ dev
 6th
 700mb
 720p
-7562
-7582
 7th
 8gb
 90mb
-a269i
-a3000
-a369i
-a390
-a516
-a526
-a536
-a706
-a850
 aab
 aabradio
 aabradionetwork
@@ -85,7 +165,6 @@ accouter
 accu
 accuweather
 acdisplay
-ace
 acer
 ach
 achartengine
@@ -114,12 +193,12 @@ adhd
 adhoclabs
 adictor
 adidas
-admin
+admin admins
 admob
 adn
 adrenaland
 ads
-adult
+adult adults
 adw
 adware
 aerosolization
@@ -134,7 +213,7 @@ afterdo
 afterfocus
 afterlight
 aftertouch
-aggrandizer
+aggrandizer aggrandizers
 aggregator
 agromobile
 aida
@@ -161,7 +240,7 @@ allegorization
 allosaurus
 allover
 alphabetization
-alphabetizer
+alphabetizer alphabetizers
 alphasound
 amazeballs
 amazon
@@ -169,13 +248,13 @@ amazonfresh
 amd
 american
 americanization
-aminoacid
+aminoacid aminoacids
 amortization
-amphitheater
+amphitheater amphitheaters
 anaesthetization
 anal
-analytic
-analyzer
+analytic analytics
+analyzer analyzers
 anastasia
 androhelm
 androidesk
@@ -191,34 +270,34 @@ anodization
 anonymous
 antagonization
 antilabor
-antitumor
+antitumor antitumors
 anus
 aop
 aosp
 apft
 api
-apk
+apk apks
 apn
-apologizer
+apologizer apologizers
 apotheosization
 app
-appetizer
+appetizer appetizers
 applock
 appointment
 apps
 appstore
 apus
 arabic
-arbor
+arbor arbors
 arborization
-archaizer
-ardor
+archaizer archaizers
+ardor ardors
 argh
 ariana
-armor
-armorer
+armor armors
+armorer armorers
 armoring
-armory
+armory armories
 aromatization
 arterialization
 aryanization
@@ -229,13 +308,13 @@ asshole
 asus
 atm
 atomization
-atomizer
+atomizer atomizers
 atrix
 atropinization
 att
-audiobook
-authorization
-authorizer
+audiobook audiobooks
+authorization authorizations
+authorizer authorizers
 autocorrect
 autodesk
 autofocus
@@ -247,12 +326,11 @@ autosave
 autosensitization
 autosync
 av
-avant
 avg
 avi
 avtech
 aw
-axiomatization
+axiomatization axiomatizations
 ayaw
 babbel
 backround
@@ -261,21 +339,21 @@ bae
 bam
 bama
 bangladeshi
-baptizer
+baptizer baptizers
 barbarization
 barchart
-barcode
-barycenter
-bastardization
+barcode barcodes
+barycenter barycenters
+bastardization bastardizations
 bb
 bbc
 bbm
 bbt
 bebe
 becudgeling
-behavior
+behavior behaviors
 behaviorism
-behaviorist
+behaviorist behaviorists
 behaviorsim
 bejeweled
 bejeweling
@@ -284,21 +362,21 @@ belkin
 bengali
 bestapps
 bestappsmarket
-bestfriend
+bestfriend bestfriends
 besties
-beveler
-beveling
+beveler bevelers
+beveling bevelings
 bf
-bff
+bff bffs
 bg
 bieber
-bitcoin
+bitcoin bitcoins
 bitumenization
 biz
 ble
 bloatware
 blockchain
-blog
+blog blogs
 blogilates
 blu
 bluestack
@@ -308,12 +386,12 @@ bok
 bollywood
 bookmarking
 bookshout
-bot
-bowdlerization
+bot bots
+bowdlerization bowdlerizations
 boweling
 brainer
 brainpop
-breathalyzer
+breathalyzer breathalyzers
 brutalization
 bt
 btc
@@ -322,61 +400,61 @@ bull
 bullshit
 bureaucratization
 bushel
-busheler
-busheling
+busheler bushelers
+busheling bushelings
 busybox
 bvp
 cacu
-cadaster
+cadaster cadasters
 cageling
 cal
 calor
-camera
+camera cameras camerae
 canadian
 canaliculization
-canalization
-cancelation
-canceler
+canalization canalizations
+cancelation cancelations
+canceler cancelers
 cancerization
 candor
 candycrush
 cannibalization
 canonicalization
-canonization
-capitalization
-capitalizer
+canonization canonizations
+capitalization capitalizations
+capitalizer capitalizers
 caponization
 capsulization
-captcha
+captcha captchas
 caramelization
 carb
 carbonization
-carbonizer
+carbonizer carbonizers
 carbs
 carburization
 cardio
 carezone
-caricaturization
+caricaturization caricaturizations
 cartelization
 cartellization
 cassey
-catalyzer
-catechization
-catechizer
-categorization
-categorizer
+catalyzer catalyzers
+catechization catechizations
+catechizer catechizers
+categorization categorizations
+categorizer categorizers
 catheterization
 catholicization
 cauterization
 cbn
 cbs
 cellphone
-center
+center centers
 centering
-centiliter
-centimeter
+centiliter centiliters
+centimeter centimeters
 centralization
-centralizer
+centralizer centralizers
 centrifugalization
 cephalization
 cfc
@@ -384,18 +462,18 @@ ch
 chandeling
 changelog
 channeled
-channeler
+channeler channelers
 channelization
 chaptalization
-characterization
-characterizer
-chathead
+characterization characterizations
+characterizer characterizers
+chathead chatheads
 chattelization
 chemosterilization
 chinese
-chiseler
-chiseling
-chiver
+chiseler chiselers
+chiseling chiselings
+chiver chivers
 chivery
 chivettes
 christian
@@ -403,18 +481,18 @@ christianization
 chromecast
 cia
 cicatrization
-cicatrizer
+cicatrizer cicatrizers
 cinchonization
-circularization
-circularizer
-civilization
-civilizer
+circularization circularizations
+circularizer circularizers
+civilization civilizations
+civilizer civilizers
 ck
-clamorer
-clanmate
+clamorer clamorers
+clanmate clanmates
 clashofclans
 clashofclanshelper
-classicization
+classicization classicizations
 cleanapp
 cleanmaster
 clearity
@@ -424,35 +502,35 @@ cnn
 coc
 cocainization
 collectivization
-colonization
+colonization colonizations
 colonizationist
-colonizer
-color
+colonizer colonizers
+color colors
 colorability
 colorableness
-colorant
+colorant colorants
 colorblind
-colorer
+colorer colorers
 colorfastness
 colorfulness
-coloring
-colorist
+coloring colorings
+colorist colorists
 colorlessness
-colorman
-colorpoint
-colorway
+colorman colormen
+colorpoint colorpoints
+colorway colorways
 colory
 comcast
-commercialization
+commercialization commercializations
 communalization
-communization
+communization communizations
 como
 compartmentalization
 complaint
-complementizer
+complementizer complementizers
 computerization
-concenter
-conceptualization
+concenter concenters
+conceptualization conceptualizations
 concretization
 conditionalization
 config
@@ -461,39 +539,38 @@ connor
 containerization
 contextualization
 conventionalization
-convo
+convo convos
 copart
 copolymerization
-corbeling
-core2
-counseling
-counselor
-counselorship
+corbeling corbelings
+counseling counselings
+counselor counselors
+counselorship counselorships
 counter
 cox
 cp
 cr
 craigslist
 crap
-crash
-creater
+crash crashs
+creater creators creaters
 creator
 creepypasta
-crenelation
+crenelation crenelations
 cricbuzz
 criticizable
-criticizer
+criticizer criticizers
 crystallization
-crystallizer
+crystallizer crystallizers
 csv
-cudgeler
-cudgeling
+cudgeler cudgelers
+cudgeling cudgelings
 cupelation
-cupeler
+cupeler cupelers
 curarization
 customizability
-customization
-customizer
+customization customizations
+customizer customizers
 cuticularization
 cvs
 cx
@@ -503,51 +580,51 @@ dafuq
 dang
 dantdm
 dave
-daycenter
+daycenter daycenters
 dcs
 dd
 dealcoholization
 dealdash
-deaminization
+deaminization deaminizations
 dearterialization
-decaliter
-decameter
+decaliter decaliters
+decameter decameters
 decarbonization
-decarbonizer
+decarbonizer decarbonizers
 decarburization
 decartelization
-decentralization
-deciliter
-decimalization
-decimeter
-decolonization
+decentralization decentralizations
+deciliter deciliters
+decimalization decimalizations
+decimeter decimeters
+decolonization decolonizations
 decolorization
-decriminalization
+decriminalization decriminalizations
 defense
 dehumanization
 dehypnotization
 deindustrialization
-deionization
-dekaliter
-dekameter
+deionization deionizations
+dekaliter dekaliters
+dekameter dekameters
 delegalization
-delocalization
+delocalization delocalizations
 demagnetization
-demagnetizer
+demagnetizer demagnetizers
 demasculinization
-dematerialization
-demeanor
+dematerialization dematerializations
+demeanor demeanors
 demilitarization
 demineralization
-demobilization
+demobilization demobilizations
 democratization
-demonetarization
-demonetization
+demonetarization demonetarizations
+demonetization demonetizations
 demoralization
-demoralizer
+demoralizer demoralizers
 demorphinization
 demyelinization
-demythologization
+demythologization demythologizations
 denationalization
 denaturalization
 denization
@@ -556,52 +633,51 @@ deodorization
 deodorizer
 deodorizers
 deoxidization
-deoxidizer
-departmentalization
+deoxidizer deoxidizers
+departmentalization departmentalizations
 depersonalization
 depolarization
-depolarizer
+depolarizer depolarizers
 depolymerization
-depressurization
+depressurization depressurizations
 depulization
 derealization
 desalinization
 descript
-desensitization
-desensitizer
+desensitization desensitizations
+desensitizer desensitizers
 deseret
 desexualization
-desirex
-desktops
+desktops desktops
 destabilization
-destructuralization
+destructuralization destructuralizations
 desulphurization
-desulphurizer
+desulphurizer desulphurizers
 detornement
 detribalization
 devascularization
 develing
 developerssimplifylives
 devitalization
-devorer
+devorer devorers
 devsl
 devuni
-dialyzer
-dichotomization
+dialyzer dialyzers
+dichotomization dichotomizations
 digitalization
-digitization
-digitizer
+digitization digitizations
+digitizer digitizers
 dilbert
 diopter
 dioptes
-diphthongization
+diphthongization diphthongizations
 directv
 discourage
 disfavorer
 dishonorableness
-dishonorer
-disorganization
-disorganizer
+dishonorer dishonorers
+disorganization disorganizations
+disorganizer disorganizers
 divinization
 diy
 djs
@@ -611,18 +687,18 @@ dm
 dms
 dns
 docx
-dogmatization
-dogmatizer
-dolor
+dogmatization dogmatizations
+dogmatizer dogmatizers
+dolor dolors
 dosecast
 dota
 doweling
 downloader
 dp
-dramatization
-dramatizer
+dramatization dramatizations
+dramatizer dramatizers
 drivel
-driveler
+driveler drivelers
 droid
 droidx
 dropbox
@@ -632,70 +708,67 @@ dsi
 dslr
 dubai
 dubstep
-dueler
-dueling
-duelist
+dueler duelers
+dueling duelings
+duelist duelists
 duh
 dum
 dumbass
 duolingo
-duos2
 dvd
 dvr
 dw
 dwtd
-e400
-e8
 ebay
 ebola
-ebook
-ecard
+ebook ebooks
+ecard ecards
 eco
 economization
-economizer
+economizer economizers
 eczematization
 edeposit
 editorialization
 editorializations
-editorializer
+editorializer editorializers
 edm
 electrocauterization
 electrolyzation
-electrolyzer
-elf
+electrolyzer electrolyzers
+elf elves
 elvis
-email
+email emails
 embolization
-emoji
-emoticon
-emotionalization
-enameler
-enameling
-enamelist
-encaster
-endeavor
-endeavorer
+emoji emojis
+emoticon emoticons
+emotionalization emotionalizations
+enameler enamelers
+enameling enamelings
+enamelist enamelists
+encaster encasters
+endeavor endeavors
+endeavorer endeavorers
 endenization
 endo
 endomondo
-energizer
+energizer energizers
 english
 enolization
 enquiry
 envenomization
-epicenter
+epicenter epicenters
 epidermidalization
 epidermization
 epigrammatizer
 epithelialization
 epithelization
-epitomization
-epitomizer
+epitomization epitomizations
+epitomizer epitomizers
 eppicard
 epub
 eq
-equalization
-equalizer
+equalization equalizations
+equalizer equalizers
 ereader
 ericsson
 eris
@@ -703,15 +776,15 @@ eroticization
 erotization
 espn
 estrinization
-eternalization
+eternalization eternalizations
 eternization
-etherealization
+etherealization etherealizations
 etherization
-eulogizer
-euphemizer
+eulogizer eulogizers
+euphemizer euphemizers
 evan
-evangelization
-evangelizer
+evangelization evangelizations
+evangelizer evangelizers
 evernote
 everytime
 evn
@@ -719,53 +792,53 @@ evo
 evow
 ew
 exiler
-exorcizer
+exorcizer exorcizers
 exp
 expedia
 experia
-extemporization
-extemporizer
-exteriorization
-externalization
+extemporization extemporizations
+extemporizer extemporizers
+exteriorization exteriorizations
+externalization externalizations
 extra
 eyeem
 ez
 facebook
 facebookfriend
 facetime
-factorization
+factorization factorizations
 fairwinds
 fam
-familiarization
-familiarizer
+familiarization familiarizations
+familiarizer familiarizers
 faq
 faradization
 faradizer
 faradizers
-favor
+favor favors
 favorableness
-favorer
-favorite
-favoritism
+favorer favorers
+favorite favorites
+favoritism favoritisms
 fba
 fbi
 fbreader
 fcs
 fed
-federalization
+federalization federalizations
 feminization
 ferreling
-fertilization
-fertilizer
-fervor
+fertilization fertilizations
+fertilizer fertilizers
+fervor fervors
 feudalization
 ffs
 fi
-fictionalization
+fictionalization fictionalizations
 fidme
 fifa
 filesystems
-finalization
+finalization finalizations
 fios
 firefox
 firewall
@@ -775,26 +848,25 @@ fito
 fitocracy
 flamory
 flanneling
-flavor
-flavorer
-flavoring
+flavor flavors
+flavorer flavorers
+flavoring flavorings
 flipagram
 flipboard
 flipkart
-fluidization
-fluidizer
+fluidization fluidizations
+fluidizer fluidizers
 fluoridization
 fn
-focalization
+focalization focalizations
 foldersync
 fone
 fonepad
-fonepad7
 foo
 footalk
 footy
-formalization
-formalizer
+formalization formalizations
+formalizer formalizers
 format
 former
 fossilization
@@ -803,86 +875,81 @@ fotos
 foxfi
 fps
 fractionization
-fraternization
-fraternizer
-freak
+fraternization fraternizations
+fraternizer fraternizers
+freak freaks
 freemium
 frontback
 froyo
 frys
 ftw
 fucker
-fueler
+fueler fuelers
 fullscreen
 fundraising
 funtastic
 fusiontables
 fx
 fyi
-g2
-g3
-galvanization
-galvanizer
-gamer
+galvanization galvanizations
+galvanizer galvanizers
+gamer gamers
 garbage
 garmin
 gaveler
-gb
 gd
 geez
 gelatinization
 gelatinizer
-generalization
-generalizer
+generalization generalizations
+generalizer generalizers
 geniego
 geo
 german
 germanization
-germanizer
+germanizer germanizers
 gf
 gg
 ggg
 ghz
-giant
-gif
-gig
+gif gifs
 gigabyte
 gionee
 git
 giveaway
 gj
-glamorization
+glamorization glamorizations
 glamorizer
 glitch
 glte
 gmail
 gn
 gnex
-gnosticizer
+gnosticizer gnosticizers
 gofundme
 goid
 goodbudget
 google
 googleapps
-gormandizer
-gothisizer
+gormandizer gormandizers
+gothisizer gothisizers
 gotomypc
 gotta
 gps
 gpx
 gr
-grandkid
-grangerization
+grandkid grandkids
+grangerization grangerizations
 grangerizer
 grangerizers
 graphic
-graphitization
+graphitization graphitizations
 greendot
 groupon
-groveler
+groveler grovelers
 gruel
-grueler
-grueling
+grueler gruelers
+grueling gruelings
 gs
 gservices
 gsf
@@ -892,21 +959,21 @@ gtasks
 gucci
 gui
 gusta
-gutturalization
+gutturalization gutturalizations
 gv
-gyrostabilizer
+gyrostabilizer gyrostabilizers
 haha
 hahahaha
 handcent
 handheld
 handphone
 hansel
-harborage
-harborer
-harmonization
-harmonizer
-hashtag
-hatcheler
+harborage harborages
+harborer harborers
+harmonization harmonizations
+harmonizer harmonizers
+hashtag hashtags
+hatcheler hatchelers
 hatcheling
 hayday
 hbo
@@ -914,8 +981,8 @@ hd
 hdmi
 hdr
 healthcare
-hectoliter
-hectometer
+hectoliter hectoliters
+hectometer hectometers
 hehe
 hehehe
 heparinization
@@ -936,22 +1003,22 @@ homescreen
 homeshop
 hominization
 homogenization
-homogenizer
+homogenizer homogenizers
 homologizer
 honor
 honorableness
-honoree
-honorer
+honoree honorees
+honorer honorers
 hoo
 hootsuite
-hospitalization
+hospitalization hospitalizations
 hosteling
 hotmail
-hotspot
+hotspot hotspots
 housel
-houseling
+houseling houselings
 hovel
-hoveler
+hoveler hovelers
 hrm
 hs
 htc
@@ -965,17 +1032,17 @@ huhu
 hulu
 human
 humanization
-humanizer
-humor
-humorer
-humorist
-humorlessness
+humanizer humanizers
+humor humors
+humorer humorers
+humorist humorists
+humorlessness humorousness
 hv
 hvfcu
 hy
 hyalinization
-hybridization
-hybridizer
+hybridization hybridizations
+hybridizer hybridizers
 hydrogenization
 hydrolyzate
 hydrolyzer
@@ -983,23 +1050,22 @@ hyperkeratinization
 hyperpolarization
 hypersensitization
 hypnotizer
-hypocenter
+hypocenter hypocenters
 hyposensitization
 hypostatization
-hypothesizer
+hypothesizer hypothesizers
 i
 ian
 ibotta
 iconia
 ics
 idc
-idealization
-idealizer
-ideatab
+idealization idealizations
+idealizer idealizers
 idiot
-idolatrizer
+idolatrizer idolatrizers
 idolization
-idolizer
+idolizer idolizers
 ig
 ign
 iii
@@ -1011,43 +1077,43 @@ ime
 img
 imho
 immobilization
-immobilizer
+immobilizer immobilizers
 immortalization
-immortalizer
-immunization
-immunizer
+immortalizer immortalizers
+immunization immunizations
+immunizer immunizers
 imo
 imp
-impersonalization
+impersonalization impersonalizations
 impetiginization
-inbox
+inbox inboxes
 indemnization
 indenization
 indian
 indie
-individualization
-individualizer
-industrialization
+individualization individualizations
+individualizer individualizers
+industrialization industrializations
 infos
 ing
-initialization
-initializer
+initialization initializations
+initializer initializers
 instagram
 instalove
 institutionalization
 instructables
 intasgram
 intel
-intellectualization
-intellectualizer
+intellectualization intellectualizations
+intellectualizer intellectualizers
 internalization
-internationalization
+internationalization internationalizations
 intex
 intouch
 investigator
-iodizer
-ionization
-ionizer
+iodizer iodizers
+ionization ionizations
+ionizer ionizers
 ios
 ipad
 ipads
@@ -1063,10 +1129,10 @@ isomerization
 ist
 ita
 italianization
-italicization
+italicization italicizations
 itd
-itemization
-itemizer
+itemization itemizations
+itemizer itemizers
 itriage
 itunes
 iw
@@ -1085,20 +1151,19 @@ jems
 jennxpenn
 jeweler
 jewelers
-jewelery
+jewelery jeweleries
 jeweling
 jk
 job
-jobcenter
+jobcenter jobcenters
 journalization
-journalizer
+journalizer journalizers
 jpay
 jpg
 js
 judaizer
 justin
 jw
-k900
 kakao
 karaoke
 karbonn
@@ -1107,16 +1172,16 @@ kayla
 kb
 kcco
 kd
-keek
+keek keeks
 kennel
 keratinization
 kevin
-key
+key keys
 keyguard
 kii
 kik
-kiloliter
-kilometer
+kiloliter kiloliters
+kilometer kilometers
 kim
 kinemaster
 kitkat
@@ -1130,7 +1195,7 @@ kmplayer
 kms
 kmt
 kn
-knick
+knick knicks
 kodi
 komo
 korean
@@ -1138,77 +1203,76 @@ kpop
 kroger
 kvue
 kyocera
-l5
-labeler
+labeler labelers
 labeloid
 labialization
-labor
+labor labors
 laboredness
-laborer
-laboring
-laborings
+laborer laborers
+laboring laboringly
+laborings aborings
 laborism
-laborist
-laborite
-laborsaver
+laborist laborists
+laborite laborites
+laborsaver laborsavers
 laborsaving
-lackluster
+lackluster lacklusters
 laggy
-laicization
+laicization laicizations
 lan
 landline
 lastfm
 lastpass
-latinization
-latinizer
+latinization latinizations
+latinizer latinizers
 latter
 lbs
 lds
-leaderboard
+leaderboard leaderboards
 lecture
-legalization
+legalization legalizations
 legitimatization
-legitimization
-legitimizer
+legitimization legitimizations
+legitimizer legitimizers
 lego
-lemmatization
+lemmatization lemmatizations
 lenovo
-level
-leveler
-lexicalization
+level levels
+leveler levelers
+lexicalization lexicalizations
 lg
 lgg
 liam
-libelant
-libelee
-libeler
-liberalization
-liberalizer
+libelant libelants
+libelee libelees
+libeler libelers
+liberalization liberalizations
+liberalizer liberalizers
 libidinization
-light
+light lights
 lindt
 linkedin
 linux
 linx
 lionization
-lionizer
-liquidizer
+lionizer lionizers
+liquidizer liquidizers
 lisa
 listerize
-liter
+liter liters
 lm
 lmao
 lmfao
-loadout
-localization
-localizer
+loadout loadouts
+localization localizations
+localizer localizers
 lockscreen
-log
-login
+log logs
+login logins
 logon
 lol
 lolipop
-loser
+loser losers looser
 lte
 lulu
 lumbarization
@@ -1221,15 +1285,12 @@ lync
 lyophilization
 lyophilizer
 lysogenization
-m7
-m8
-m9
 maby
 mac
 macadamization
 macbook
 magnetization
-magnetizer
+magnetizer magnetizers
 mailwise
 makeover
 malaysian
@@ -1248,19 +1309,19 @@ marvel
 marvelousness
 masculinization
 mashallah
-matchup
-materialization
+matchup matchups
+materialization materializations
 materializer
 maximization
-maximizer
+maximizer maximizers
 mb
 mbl
 mbps
 mbs
 mcpe
 mdm
-mechanization
-mechanizer
+mechanization mechanizations
+mechanizer mechanizers
 medco
 medeling
 mediatization
@@ -1275,16 +1336,16 @@ memes
 memorialization
 memorializer
 memorization
-memorizer
+memorizer memorizers
 memrise
 mercurialization
 mesmerization
-mesmerizer
-mesocenter
-message
+mesmerizer mesmerizers
+mesocenter mesocenters
+message messages
 metadata
-metallization
-meter
+metallization metallizations
+meter meters
 mexican
 mf
 mg
@@ -1293,20 +1354,20 @@ mic
 mich
 microliter
 micromax
-micrometer
+micrometer micrometers
 microminiaturization
 microsoft
-milliliter
-millimeter
+milliliter milliliters
+millimeter millimeters
 mindblowing
 minecraft
 mineralization
-miniaturization
-minimization
-minimizer
+miniaturization miniaturizations
+minimization minimizations
+minimizer minimizers
 minuum
 misbehavior
-misdemeanor
+misdemeanor misdemeanors
 mitralization
 miui
 mk
@@ -1316,19 +1377,19 @@ mm
 mma
 mms
 mobi
-mobilization
-mobilizer
+mobilization mobilizations
+mobilizer mobilizers
 model
 modeling
 modernization
-modernizer
+modernizer modernizers
 modularization
-moisturizer
+moisturizer moisturizers
 monetization
 monopolization
 monopolizer
 moralization
-moralizer
+moralizer moralizers
 moron
 moto
 motog
@@ -1361,8 +1422,7 @@ myspace
 mytouch
 mytracks
 mz
-n7000
-nanometer
+nanometer nanometers
 napa
 narcotization
 nas
@@ -1370,7 +1430,7 @@ nasa
 nasalization
 nascar
 nat
-nationalization
+nationalization nationalizations
 naturalization
 nav
 navfree
@@ -1378,11 +1438,11 @@ nazi
 nba
 nbc
 nebulization
-nebulizer
+nebulizer nebulizers
 nee
 neeson
-neighbor
-neighborhood
+neighbor neighbors
+neighborhood neighborhoods
 neighboring
 neighborliness
 neo
@@ -1393,10 +1453,10 @@ netcam
 netflix
 netgear
 neurohumor
-neutralization
-neutralizer
-newbie
-newsfeed
+neutralization neutralizations
+neutralizer neutralizers
+newbie newbies
+newsfeed newsfeeds
 nfc
 nfl
 ng
@@ -1410,15 +1470,12 @@ noice
 nokia
 nola
 noncancelation
-noob
+noob noobs
 normalization
 normalizer
-notarization
-note2
-note3
-note4
+notarization notarizations
 notepad
-novelization
+novelization novelizations
 nsa
 nth
 nuff
@@ -1430,7 +1487,7 @@ ocd
 ocr
 oct
 odb
-odor
+odor odors
 odorant
 odus
 officesuite
@@ -1446,20 +1503,19 @@ omg
 onedrive
 onenote
 oneplus
-onex
 onscreen
 oovoo
 opm
 oppo
 ops
 opsonization
-optimization
-optimizer
+optimization optimizations
+optimizer optimizers
 optimus
 org
-organization
-organizer
-orthocenter
+organization organizations
+organizer organizers
+orthocenter orthocenters
 osm
 ostracizer
 osum
@@ -1472,51 +1528,46 @@ overcentralization
 overgeneralization
 overinflate
 overspecialization
-oxidization
-oxidizer
+oxidization oxidizations
+oxidizer oxidizers
 oxygenizer
 ozonization
 ozonizer
-p70
-p780
-p90
-p970
 paganization
 paganizer
 pak
 pakistani
 palatalization
 palletization
-pandora
-paneling
-panelist
+paneling panelings
+panelist panelists
 parabolization
 paralyzant
 paralyzation
-paralyzer
-parameter
-parameterization
-paramor
+paralyzer paralyzers
+parameter parameters
+parameterization parameterizations
+paramor paramors
 parasitization
-particularization
+particularization particularizations
 particulizer
 passcode
 past
 pasteurization
-pasteurizer
-patronizer
+pasteurizer pasteurizers
+patronizer patronizers
 pauperization
-pavior
+pavior paviors
 paypal
 pb
 pcs
 pdanet
-pdf
+pdf pdfs
 peapod
 peasy
 pectization
 pedometer
-pekka
+pekka pekkas
 penalization
 peptization
 peptizer
@@ -1527,8 +1578,8 @@ personalization
 pewdiepie
 phillipines
 philosophization
-philosophizer
-philter
+philosophizer philosophizers
+philter philters
 phosphatization
 photographer
 photosensitization
@@ -1541,34 +1592,34 @@ pixlr
 pk
 plagiarizer
 plagiarizers
-plasmolyzability
+plasmolyzability plasmolyzabilities
 plasticization
 plasticizer
 platinization
 platitudinizer
-playlist
+playlist playlists
 playstation
 playstore
 plex
-plugin
+plugin plugins
 pluralization
 pluralizer
 pneumatization
-podcast
+podcast podcasts
 podsolization
 podzolization
 pof
 pokemon
-polarization
-polarizer
+polarization polarizations
+polarizer polarizers
 politicization
 polymerization
-pompador
+pompador pompadors
 poo
 poot
-popularization
-popularizer
-popup
+popularization popularizations
+popularizer popularizes
+popup popups
 postagram
 potion
 poweramp
@@ -1581,7 +1632,7 @@ preinstall
 preorganization
 presale
 pressurization
-pressurizer
+pressurizer pressurizers
 prestiges
 printhand
 prioritization
@@ -1593,7 +1644,7 @@ proletarianization
 promt
 pronominalization
 proselytization
-proselytizer
+proselytizer proselytizers
 psn
 psychoanalyzer
 pts
@@ -1609,7 +1660,7 @@ qmobile
 qq
 qr
 quantization
-quarreler
+quarreler quarrelers
 quattro
 quran
 racemization
@@ -1619,57 +1670,57 @@ rancor
 randomization
 randomizer
 rar
-rationalization
-rationalizer
-raveler
-raveling
+rationalization rationalizations
+rationalizer rationalizers
+raveler ravelers
+raveling ravelings
 razr
 rdp
-realization
-realizer
+realization realizations
+realizer realizers
 rebelion
 rebeliousness
-reboot
+reboot reboots
 recanalization
 recapitalization
 recforge
 recipient
-recognizer
+recognizer recognizers
 recolonization
-reconnoiter
+reconnoiter reconnoiters
 recrystallization
 redbox
 reddit
 redmi
-refueler
+refueler refuelers
 regularization
 regularizer
 reharmonization
 relapse
 relativization
 remilitarization
-remodeler
-remodeling
-remonetization
-remote
-reorganization
-reorganizer
+remodeler remodelers
+remodeling remodelings
+remonetization remonetizations
+remote remotes
+reorganization reorganizations
+reorganizer reorganizers
 reprivatization
 republicanization
 reserpinization
 retrica
-retweet
-reutilization
+retweet retweets
+reutilization reutilizations
 revalorization
 revelent
-reveler
-reveling
+reveler revelers
+reveling revelings
 revitalization
 revolutionizer
 rezound
 ricky
-rigor
-ringtone
+rigor rigors
+ringtone ringtones
 ripoff
 ritualization
 rk
@@ -1688,7 +1739,7 @@ rss
 rtr
 rts
 rumor
-rumorer
+rumorer rumorers
 rumormonger
 runkeeper
 runtastic
@@ -1696,20 +1747,10 @@ ruralization
 russian
 russianization
 ryan
-s2
-s3
-s4
-s5
-s6
-s7562
-s820
-s850
-s920
-s939
 sacralization
 safari
 salicylization
-saltpeter
+saltpeter saltpeters
 samaa
 samsung
 sanitization
@@ -1721,35 +1762,34 @@ satirizers
 satisfactory
 satnav
 saucerization
-savior
-savorer
+savior saviors
+savorer savorers
 savoriness
 sbi
-scam
-scammer
+scam scams
+scammer scammers
 scandalization
-scandalizer
+scandalizer scandalizers
 sccu
-scepter
+scepter scepters
 schematization
 screenshoot
-screenshot
+screenshot screenshots
 scrobbler
-scrutinizer
+scrutinizer scrutinizers
 sdcard
 sectionalization
 secularization
-secularizer
+secularizer secularizers
 securitization
 seesmic
-selfie
-sensation
+selfie selfies
 sensitization
-sensitizer
+sensitizer sensitizers
 sensualization
 sentimentalization
-sentinel
-serialization
+sentinel sentinels
+serialization serializations
 sermonizer
 sexualization
 sg
@@ -1761,14 +1801,12 @@ sheradization
 shield
 shit
 shopmium
-shoveler
-showtime
+shoveler shovelers
+showtime showtimes
 sidebar
 sideling
 signalization
-sii
-siii
-sim
+sim sims
 simpsons
 singularization
 siri
@@ -1783,89 +1821,88 @@ sl
 sleepbot
 slideshow
 slove
-smartphone
+smartphone smartphones
 smartwatch
-smiley
+smiley smileys
 smosh
 sms
 smurfs
 snapcash
-snapchat
-snapchatter
+snapchat snapchats
+snapchatter snapchatters
 snapchatting
 snapkidz
 snapstory
 snd
-sniveler
+sniveler snivelers
 snooze
 social
 socialization
-socializer
+socializer socializers
 solarization
 solemnization
 solemnizer
 soliloquizer
-solmization
+solmization solubilization
 somatization
 sony
 sorrow
-sound
 soundcloud
 soundwave
 sovietization
 sp
 spacehog
-spam
-spammer
+spam spams
+spammer spammers
 spancel
-specialization
-specter
+specialization specializations
+specter specters
 spiceworks
 spiritualization
 spiritualizer
-splendor
+splendor splendors
 splenization
 sponsor
 spotify
 spp
 spritz
 spyware
-squirrel
+squirrel squirrels
 ss
 ssfcu
 ssid
 ssl
-stabilization
-stabilizer
-standard
-standardization
+stabilization stabilizations
+stabilizer stabilizers
+standard standards
+standardization standardizations
 standardizer
 starbucks
 stcu
-sterilization
-sterilizer
+sterilization sterilizations
+sterilizer sterilizers
 stigmatization
 stigmatizer
 strava
 strobilization
 strychninization
-stupor
+stupor stupors
 stylization
 stylizer
-subcivilization
+subcivilization subcivilizations
 suberization
 subiniaturization
 subisidizer
-subsidization
+subsidization subsidizations
 substantivization
 subtilization
 subtilizer
 succor
 succorance
-succorer
+succorer succorers
 sudoku
 sulphurization
-summarization
+summarization summarizations
 summarizer
 supercell
 supersensitization
@@ -1875,23 +1912,23 @@ swiftkey
 swype
 syllogization
 syllogizer
-symbolization
+symbolization symbolizations
 symmetrization
-sympathizer
+sympathizer sympathizers
 synchronization
-synchronizer
+synchronizer synchronizers
 syncretization
 synthesization
-synthesizer
+synthesizer synthesizers
 syphilization
 systematization
 systematizer
 tabata
 tagal
 tambor
-tambourine
+tambourine tamborines tamborine
 tantalization
-tantalizer
+tantalizer tantalizers
 tartarization
 taskbar
 tbh
@@ -1899,44 +1936,43 @@ td
 tdm
 teamviewer
 teasel
-teaseler
+teaseler teaselers
 technicolor
 techno
 techs
 teleomerization
 temporization
-temporizer
+temporizer temporizers
 tenderization
-tenderizer
+tenderizer tenderizers
 terabyte
 territorialization
 terrorization
 terrorizer
 teslacoil
 tetanization
-text
+text texts
 textplus
 tf
 tfc
 th
 thanksgiving
-theater
+theater theaters
 thematization
 theme
 theologization
 theologizer
-theorization
-theorizer
+theorization theorizations
+theorizer theorizers
 thermalization
-thingy
+thingy thingies
 third
 thos
 thumbnail
-thunderbolt
 thw
 ticketmaster
 tigress
-timeline
+timeline timelines
 timepass
 timesheet
 timestamp
@@ -1956,29 +1992,28 @@ totalization
 totalizer
 touchtunes
 touchwiz
-toweling
+toweling towelings
 tp
 tq
 tr
 traffline
-trammeler
+trammeler trammelers
 tranquilization
-tranquilizer
+tranquilizer tranquilizers
 tranquillization
 tranquillizer
-transformer
 trash
 traumatization
-traveler
+traveler travelers
 trichinization
-tricolor
+tricolor tricolors
 trimet
 tripadvisor
 trivialization
 trojan
 tropicalization
 trowel
-troweler
+troweler trowelers
 trulia
 trypsinization
 ts
@@ -1987,20 +2022,20 @@ tss
 ttc
 tts
 tumblr
-tumor
+tumor tumors
 tunnel
-tunneler
-tunneling
+tunneler tunnelers
+tunneling tunnelings
 tw
 tweek
 tweeks
-tweet
+tweet tweets
 tweetcaster
 twitt
 twrp
 txt
 tyms
-tyrannizer
+tyrannizer tyrannizers
 tzv
 uae
 uber
@@ -2016,53 +2051,52 @@ unfavorableness
 unicolor
 uninstaller
 unionization
-unionizer
+unionizer unionizers
 unitization
 universalization
 unlocker
 unmute
 unrar
-unraveler
+unraveler unravelers
 unsatisfactory
 unsavoriness
 upc
 upto
 urbanization
 urgh
-url
+url urls
 usb
 usd
-username
+username usernames
 uta
-utilization
+utilization utilizations
 utilizer
 utorrent
 ux
 vacuolization
 valor
-valorization
+valorization valorizations
 vandalization
 vanity
 vapor
 vaporability
 vaporer
 vaporization
-vaporizer
+vaporizer vaporizers
 vapory
 varicolor
 variolization
 vascularization
 vectorization
-venice
-verbalization
+verbalization verbalizations
 verison
 verizon
 vernalization
 versicolor
 vibe
 viber
-victimization
-victimizer
+victimization victimizations
+victimizer victimizers
 videocall
 videoder
 videostream
@@ -2073,31 +2107,30 @@ vin
 vingle
 viper
 virilization
-visualization
-visualizer
+visualization visualizations
+visualizer visualizers
 vitalization
-vitalizer
+vitalizer vitalizers
 vitaminization
 vitriolization
-vivid
 vivint
 vk
 vl
 vlc
 vm
 vms
-vocalization
-vocalizer
+vocalization vocalizations
+vocalizer vocalizers
 vodafone
-voicemail
+voicemail voicemails
 voip
 volatilization
 volcanization
 vpn
 vs
 vulcanization
-vulcanizer
-vulgarization
+vulcanizer vulcanizers
+vulgarization vulgarizations
 vulgarizer
 vulgarizers
 vv
@@ -2111,17 +2144,17 @@ walkman
 walmart
 walton
 watchlist
-watercolor
+watercolor watercolors
 watsup
-waypoint
+waypoint waypoints
 waze
 wbal
 wd
 wdr
 weatherbug
-webcam
+webcam webcams
 webpage
-website
+website websites
 wechat
 weight
 westernization
@@ -2133,7 +2166,6 @@ wifi
 wii
 wiimote
 wiki
-wildfire
 wingstop
 winterization
 wishlist
@@ -2141,7 +2173,7 @@ wiz
 wk
 wks
 wo
-womanizer
+womanizer womanizers
 woodforest
 woohoo
 workaround
@@ -2181,19 +2213,14 @@ yar
 yay
 yey
 yh
-yodeler
+yodeler yodelers
 yodeling
 yolo
 youtube
-youtuber
+youtuber youtubers
 youve
 zag
-zen5
 zenfone
-zenfone2
-zenfone4
-zenfone5
-zenphone
 zig
 zillow
 zip

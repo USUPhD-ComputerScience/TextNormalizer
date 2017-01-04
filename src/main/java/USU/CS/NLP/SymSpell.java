@@ -31,11 +31,16 @@ public class SymSpell implements Serializable {
 	private static final int editDistanceMax = 3;
 	private static final int verbose = 2;
 	private static final Map<String, String> basewordPOS = new HashMap<>();
+	private static final Set<String> fullDictionary = new HashSet<>();
 	public static final String TRAINDIRECTORY = "dictionary/correctorTraining/";
 	private static SymSpell instance = null;
 
-	public Set<String> getDictionary() {
+	public Set<String> getBaseDictionary() {
 		return baseDictionary.keySet();
+	}
+
+	public Set<String> getFullDictionary() {
+		return fullDictionary;
 	}
 
 	public static SymSpell getInstance() {
@@ -212,9 +217,60 @@ public class SymSpell implements Serializable {
 		return result;
 	}
 
+	private void createFullDictionary(String corpus, String corpus2,
+			String misc, String stop) {
+		readFullDictionary(corpus);
+		readFullDictionary(corpus2);
+		readFullDictionary(misc);
+		readFullDictionary(stop);
+	}
+
+	private void readFullDictionary(String corpus) {
+		File fcheckExist = new File(corpus);
+		if (!fcheckExist.exists()) {
+			System.err.println("File not found: " + corpus);
+			return;
+		}
+		Scanner br = null;
+		try {
+			List<String> fileLists = Util.listFilesForFolder(corpus);
+			for (String fileName : fileLists) {
+				try {
+					br = new Scanner(new FileReader(fileName));
+					while (br.hasNextLine()) {
+						for (String key : parseWords(br.nextLine())) {
+							// String key = br.nextLine().split("\\s")[0];
+							if (key.length() < 3)
+								continue;
+							key = key.toLowerCase();
+							fullDictionary.add(key);
+						}
+					}
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} finally {
+					if (br != null)
+						br.close();
+				}
+
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			if (br != null)
+				br.close();
+		}
+	}
+
 	// create a frequency disctionary from a corpus
 	private void createDictionary(String corpus, String corpus2, String misc,
 			String stop, Map<String, DictionaryItem> dictionary) {
+		createFullDictionary(corpus, corpus2, misc, stop);
 		File fcheckExist = new File(corpus);
 		if (!fcheckExist.exists()) {
 			System.err.println("File not found: " + corpus);
