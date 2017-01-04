@@ -18,6 +18,7 @@ import java.util.Set;
 
 import org.apache.commons.collections.comparators.ComparatorChain;
 
+import USU.CS.TextNormalizer.TextNormalizer;
 import USU.CS.Utils.Util;
 
 public class SymSpell implements Serializable {
@@ -33,9 +34,10 @@ public class SymSpell implements Serializable {
 	public static final String TRAINDIRECTORY = "dictionary/correctorTraining/";
 	private static SymSpell instance = null;
 
-	public Set<String> getDictionary(){
+	public Set<String> getDictionary() {
 		return baseDictionary.keySet();
 	}
+
 	public static SymSpell getInstance() {
 		if (instance == null) {
 			instance = new SymSpell();
@@ -47,9 +49,13 @@ public class SymSpell implements Serializable {
 			// / 1000 + " seconds!");
 			// start = System.currentTimeMillis();
 			System.out.println(">Creating improvised basic dictionary ...");
-			instance.createDictionary("dictionary/baseWord/wordnet/",
-					"dictionary/baseWord/newwords/",
-					"dictionary/baseWord/misc/", "dictionary/stop/",
+			instance.createDictionary(
+					TextNormalizer.getDictionaryDirectory()
+							+ "baseWord/wordnet/",
+					TextNormalizer.getDictionaryDirectory()
+							+ "baseWord/newwords/",
+					TextNormalizer.getDictionaryDirectory() + "baseWord/misc/",
+					TextNormalizer.getDictionaryDirectory() + "stop/",
 					instance.baseDictionary);
 			System.out.println(
 					"Took " + (System.currentTimeMillis() - start) / 1000
@@ -238,8 +244,6 @@ public class SymSpell implements Serializable {
 							basewordPOS.put(key + "_NN", "NN");
 						if (fileName.contains("verb"))
 							basewordPOS.put(key + "_VB", "VB");
-						if (key.equals("very"))
-							System.out.println("oh shit");
 						// }
 					}
 				} catch (FileNotFoundException e) {
@@ -291,8 +295,6 @@ public class SymSpell implements Serializable {
 							basewordPOS.put(key + "_NN", "NN");
 						if (fileName.contains("verb"))
 							basewordPOS.put(key + "_VB", "VB");
-						if (key.equals("very"))
-							System.out.println("oh shit");
 						// }
 					}
 				} catch (FileNotFoundException e) {

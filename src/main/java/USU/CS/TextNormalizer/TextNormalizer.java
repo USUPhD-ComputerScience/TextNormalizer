@@ -1,8 +1,11 @@
 package USU.CS.TextNormalizer;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 
 import USU.CS.NLP.CustomStemmer;
@@ -11,7 +14,64 @@ import USU.CS.NLP.SymSpell;
 import USU.CS.Utils.Util;
 
 public class TextNormalizer {
-	public static String normalize(String input) {
+	private static TextNormalizer instance = null;
+	private static String DICTIONARY_DIRECTORY = "dictionary/";
+	private static String TRIGRAM_TRAINING_DIRECTORY = "dictionary/trigramTraning/";
+	private static boolean DEBUG = false;
+
+	private TextNormalizer() {
+		// TODO Auto-generated constructor stub
+	}
+
+	private static void debug_println(String msg) {
+		if (DEBUG)
+			System.out.println(msg);
+	}
+
+	public void readConfigINI(String fileName) throws FileNotFoundException {
+		System.out.println("Reading configuration file at "+ fileName);
+		Scanner br = new Scanner(new File(fileName));
+		while (br.hasNextLine()) {
+			String item = br.nextLine();
+			String[] tokens = item.split("=");
+			if (tokens.length == 2) {
+				String variable = tokens[0].replace(" ", "");
+				if (variable.equals("DICTIONARY_DIRECTORY")) {
+					String value = tokens[1].replace(" ", "");
+					DICTIONARY_DIRECTORY = value;
+				}
+				if (variable.equals("TRIGRAM_TRAINING_DIRECTORY")) {
+					String value = tokens[1].replace(" ", "");
+					TRIGRAM_TRAINING_DIRECTORY = value;
+				}
+				if (variable.equals("DEBUG")) {
+					String value = tokens[1].replace(" ", "");
+					if (value.equals("0"))
+						DEBUG = false;
+					if (value.equals("1"))
+						DEBUG = true;
+				}
+			}
+		}
+		br.close();
+		System.out.println("DONE Reading configuration file");
+	}
+
+	public static String getTrigramTrainingDirectory() {
+		return TRIGRAM_TRAINING_DIRECTORY;
+	}
+
+	public static String getDictionaryDirectory() {
+		return DICTIONARY_DIRECTORY;
+	}
+
+	public static TextNormalizer getInstance() {
+		if (instance == null)
+			instance = new TextNormalizer();
+		return instance;
+	}
+
+	public String normalize(String input) {
 		String[] taggedTokens = preprocessAndSplitToTaggedTokens(input);
 		List<String> correctedTaggedTokens = new ArrayList<>();
 		CustomStemmer stemmer = CustomStemmer.getInstance();
@@ -23,7 +83,7 @@ public class TextNormalizer {
 		}
 		String correctedTaggedText = NatureLanguageProcessor
 				.mergeIntoText(correctedTaggedTokens);
-		System.out.println(correctedTaggedText);
+		debug_println(correctedTaggedText);
 		return correctedTaggedText;
 	}
 
@@ -32,7 +92,7 @@ public class TextNormalizer {
 	// suggest using 0.4
 	// uniproportionThreshold: ratio of single english words to all words,
 	// suggest using 0.5
-	public static boolean isNonEnglish(List<String> wordList,
+	public boolean isNonEnglish(List<String> wordList,
 			double biproportionThreshold, double uniproportionThreshold) {
 		Set<String> realDictionary = SymSpell.getInstance().getDictionary();
 		double totalScore = 0, bigramScore = 0, unigramScore = 0;
@@ -68,7 +128,7 @@ public class TextNormalizer {
 	// 2. i_PRP mean_VB the_NN new_JJ level_NN
 	// 3. angry_JJ bird_VB i_PRP love_VB the_NN new_JJ level_NN they_PRP be_VB
 	// very_NN challenging_JJ
-	public static List<List<String>> normalize_SplitSentence(String input) {
+	public List<List<String>> normalize_SplitSentence(String input) {
 		String[] taggedTokens = preprocessAndSplitToTaggedTokens(input);
 
 		List<List<String>> correctedTaggedSentences = new ArrayList<>();
@@ -129,11 +189,11 @@ public class TextNormalizer {
 			sentence = null;
 		}
 		for (List<String> sen : correctedTaggedSentences)
-			System.out.println(sen);
+			debug_println(sen.toString());
 		return correctedTaggedSentences;
 	}
 
-	private static String[] preprocessAndSplitToTaggedTokens(String input) {
+	private String[] preprocessAndSplitToTaggedTokens(String input) {
 		NatureLanguageProcessor nlp = NatureLanguageProcessor.getInstance();
 		// 1st step: replace words with a mapper, keep the whole format
 		List<String> tokens = NatureLanguageProcessor.wordSplit(input);
@@ -149,8 +209,10 @@ public class TextNormalizer {
 		return taggedTokens;
 	}
 
-	public static void main(String[] args) {
-		normalize_SplitSentence(
+	public static void main(String[] args) throws FileNotFoundException {
+		TextNormalizer normalizer = TextNormalizer.getInstance();
+		normalizer.readConfigINI("D:\\EclipseWorkspace\\TextNormalizer\\config.INI");
+		normalizer.normalize_SplitSentence(
 				"Angry birds I love the new levels they (the new level. I meant the new levels) are very challenging . You should make more levels . I love angry birds.And you should sign with sponge bob squarepants for an app .And you should youse Billy Joel music for your background sound.");
 	}
 }

@@ -16,6 +16,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import USU.CS.TextNormalizer.TextNormalizer;
 import au.com.bytecode.opencsv.CSVReader;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
@@ -97,9 +98,9 @@ public class NatureLanguageProcessor {
 		PoSTagger = new MaxentTagger(
 				"dictionary/POS/english-left3words-distsim.tagger");
 		try {
-			loadCorrectionMap(new File("dictionary/Map/wordMapper.txt"),
-					new File("dictionary/Map/posMapper.txt"));
-			loadDictionary(new File("dictionary/improvised").listFiles());
+			loadCorrectionMap(new File(TextNormalizer.getDictionaryDirectory()+"Map/wordMapper.txt"),
+					new File(TextNormalizer.getDictionaryDirectory()+"Map/posMapper.txt"));
+			loadDictionary(new File(TextNormalizer.getDictionaryDirectory()+"improvised").listFiles());
 			Porter2StemmerInit();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -114,14 +115,14 @@ public class NatureLanguageProcessor {
 		CSVReader reader = null;
 		try {
 			reader = new CSVReader(
-					new FileReader("dictionary/stop/englishImprovised.stop"));
+					new FileReader(TextNormalizer.getDictionaryDirectory()+"stop/englishImprovised.stop"));
 			String[] row = null;
 			while ((row = reader.readNext()) != null) {
 				stopWordSet.add(row[0]);
 			}
 
 			PrintWriter stop = new PrintWriter(
-					"dictionary/stop/englishImprovised.stop");
+					TextNormalizer.getDictionaryDirectory()+"stop/englishImprovised.stop");
 			for (String w : stopWordSet)
 				stop.println(w);
 			stop.close();

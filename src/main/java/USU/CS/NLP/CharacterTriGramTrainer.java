@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
+import USU.CS.TextNormalizer.TextNormalizer;
 import USU.CS.Utils.Util;
 
 
@@ -19,9 +20,9 @@ public class CharacterTriGramTrainer {
 	long[][][] total = new long[27][27][27];
 	long totalCount = 0;
 	private static CharacterTriGramTrainer instance = null;
-	 public static final String INPUTFILE = "\\webbase\\";
+	 public static final String INPUTFILE = TextNormalizer.getTrigramTrainingDirectory();
 	//public static final String INPUTFILE = "text8";
-	public static final String OUTPUTFILE = "dictionary/trigramData/trainedData.txt";
+	public static final String OUTPUTFILE = TextNormalizer.getDictionaryDirectory()+"trigramData/trainedData.txt";
 
 	public static CharacterTriGramTrainer getInstance() {
 		if (instance == null) {
