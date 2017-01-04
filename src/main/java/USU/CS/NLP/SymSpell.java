@@ -45,7 +45,8 @@ public class SymSpell implements Serializable {
 			System.out.println(">Creating improvised basic dictionary ...");
 			instance.createDictionary("dictionary/baseWord/wordnet/",
 					"dictionary/baseWord/newwords/",
-					"dictionary/baseWord/misc/", instance.baseDictionary);
+					"dictionary/baseWord/misc/", "dictionary/stop/",
+					instance.baseDictionary);
 			System.out.println(
 					"Took " + (System.currentTimeMillis() - start) / 1000
 							+ " seconds!");
@@ -203,7 +204,7 @@ public class SymSpell implements Serializable {
 
 	// create a frequency disctionary from a corpus
 	private void createDictionary(String corpus, String corpus2, String misc,
-			Map<String, DictionaryItem> dictionary) {
+			String stop, Map<String, DictionaryItem> dictionary) {
 		File fcheckExist = new File(corpus);
 		if (!fcheckExist.exists()) {
 			System.err.println("File not found: " + corpus);
@@ -217,21 +218,25 @@ public class SymSpell implements Serializable {
 				try {
 					br = new Scanner(new FileReader(fileName));
 					while (br.hasNextLine()) {
-						for (String key : parseWords(br.nextLine())) {
-							if (key.length() < 3)
-								continue;
+						// for (String key : parseWords(br.nextLine())) {
+						String key = br.nextLine().split("\\s")[0];
+						if (key.length() < 3)
+							continue;
+						key = key.toLowerCase();
 
-							if (createDictionaryEntry(key, dictionary))
-								wordCount++;
-							if (fileName.contains("adj"))
-								basewordPOS.put(key, "JJ");
-							if (fileName.contains("adv"))
-								basewordPOS.put(key, "JJ");
-							if (fileName.contains("noun"))
-								basewordPOS.put(key, "NN");
-							if (fileName.contains("verb"))
-								basewordPOS.put(key, "VB");
-						}
+						if (createDictionaryEntry(key, dictionary))
+							wordCount++;
+						if (fileName.contains("adj"))
+							basewordPOS.put(key + "_JJ", "JJ");
+						if (fileName.contains("adv"))
+							basewordPOS.put(key + "_JJ", "JJ");
+						if (fileName.contains("noun"))
+							basewordPOS.put(key + "_NN", "NN");
+						if (fileName.contains("verb"))
+							basewordPOS.put(key + "_VB", "VB");
+						if (key.equals("very"))
+							System.out.println("oh shit");
+						// }
 					}
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
@@ -265,21 +270,26 @@ public class SymSpell implements Serializable {
 				try {
 					br = new Scanner(new FileReader(fileName));
 					while (br.hasNextLine()) {
-						for (String key : parseWords(br.nextLine())) {
-							if (key.length() < 3)
-								continue;
+						// for (String key : parseWords(br.nextLine())) {
 
-							if (createDictionaryEntry(key, dictionary))
-								wordCount++;
-							if (fileName.contains("adj"))
-								basewordPOS.put(key, "JJ");
-							if (fileName.contains("adv"))
-								basewordPOS.put(key, "JJ");
-							if (fileName.contains("noun"))
-								basewordPOS.put(key, "NN");
-							if (fileName.contains("verb"))
-								basewordPOS.put(key, "VB");
-						}
+						String key = br.nextLine().split("\\s")[0];
+						if (key.length() < 3)
+							continue;
+						key = key.toLowerCase();
+
+						if (createDictionaryEntry(key, dictionary))
+							wordCount++;
+						if (fileName.contains("adj"))
+							basewordPOS.put(key + "_JJ", "JJ");
+						if (fileName.contains("adv"))
+							basewordPOS.put(key + "_JJ", "JJ");
+						if (fileName.contains("noun"))
+							basewordPOS.put(key + "_NN", "NN");
+						if (fileName.contains("verb"))
+							basewordPOS.put(key + "_VB", "VB");
+						if (key.equals("very"))
+							System.out.println("oh shit");
+						// }
 					}
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
@@ -290,6 +300,7 @@ public class SymSpell implements Serializable {
 				}
 
 			}
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -306,6 +317,34 @@ public class SymSpell implements Serializable {
 			System.err.println("File not found: " + misc);
 			return;
 		}
+		wordCount = readDictionaryFromDirectory(misc, dictionary, wordCount);
+		fcheckExist = new File(stop);
+		if (!fcheckExist.exists()) {
+			System.err.println("File not found: " + stop);
+			return;
+		}
+		wordCount = readDictionaryFromDirectory(stop, dictionary, wordCount);
+
+		System.out.println(">>Dictionary created: " + wordCount + " words, "
+				+ dictionary.size() + " entries, for edit distance="
+				+ editDistanceMax);
+		System.out.print("----------- Training dictionary");
+		train(dictionary);
+		System.out.println("---> Done!");
+		// System.out.println(">>Writing SymSpell data to file..");
+		// try {
+		// FileOutputStream fout = new FileOutputStream(FILENAME);
+		// ObjectOutputStream oos = new ObjectOutputStream(fout);
+		// oos.writeObject(instance);
+		// } catch (IOException e) {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
+	}
+
+	private long readDictionaryFromDirectory(String misc,
+			Map<String, DictionaryItem> dictionary, long wordCount) {
+		Scanner br;
 		br = null;
 		try {
 			List<String> fileLists = Util.listFilesForFolder(misc);
@@ -313,13 +352,16 @@ public class SymSpell implements Serializable {
 				try {
 					br = new Scanner(new FileReader(fileName));
 					while (br.hasNextLine()) {
-						for (String key : parseWords(br.nextLine())) {
-							if (key.length() < 3)
-								continue;
+						// for (String key : parseWords(br.nextLine())) {
 
-							if (createDictionaryEntry(key, dictionary))
-								wordCount++;
-						}
+						String key = br.nextLine().split("\\s")[0];
+						if (key.length() < 3)
+							continue;
+						key = key.toLowerCase();
+
+						if (createDictionaryEntry(key, dictionary))
+							wordCount++;
+						// }
 					}
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
@@ -340,22 +382,7 @@ public class SymSpell implements Serializable {
 			if (br != null)
 				br.close();
 		}
-
-		System.out.println(">>Dictionary created: " + wordCount + " words, "
-				+ dictionary.size() + " entries, for edit distance="
-				+ editDistanceMax);
-		System.out.print("----------- Training dictionary");
-		train(dictionary);
-		System.out.println("---> Done!");
-		// System.out.println(">>Writing SymSpell data to file..");
-		// try {
-		// FileOutputStream fout = new FileOutputStream(FILENAME);
-		// ObjectOutputStream oos = new ObjectOutputStream(fout);
-		// oos.writeObject(instance);
-		// } catch (IOException e) {
-		// // TODO Auto-generated catch block
-		// e.printStackTrace();
-		// }
+		return wordCount;
 	}
 
 	private void train(Map<String, DictionaryItem> dictionary) {
@@ -651,6 +678,11 @@ public class SymSpell implements Serializable {
 		return suggestions.get(0).term;
 	}
 
+	// In case of multiple possible POS, the priority is as following:
+	// 1. original POS
+	// 2. NN
+	// 3. VB
+	// 4. JJ
 	public String[] correctThisWord_POS(String[] input) {
 		List<SuggestItem> suggestions = null;
 		suggestions = lookup(input[0], editDistanceMax, baseDictionary);
@@ -661,15 +693,35 @@ public class SymSpell implements Serializable {
 			return input;
 		}
 		String suggestedWord = suggestions.get(0).term;
-		String pos = basewordPOS.get(suggestedWord);
-		if (pos == null) {
+		result[0] = suggestedWord;
+		String pos = basewordPOS.get(suggestedWord + "_" + input[1]);
+		if (pos != null) {
+			result[1] = pos;
+			STAT_SuccessfullyCorrected++;
+			return result;
+		} else {
+			String posNN = basewordPOS.get(suggestedWord + "_NN");
+			if (posNN != null) {
+				result[1] = "NN";
+				STAT_SuccessfullyCorrected++;
+				return result;
+			}
+			String posVB = basewordPOS.get(suggestedWord + "_VB");
+			if (posVB != null) {
+				result[1] = "VB";
+				STAT_SuccessfullyCorrected++;
+				return result;
+			}
+			String posJJ = basewordPOS.get(suggestedWord + "_JJ");
+			if (posJJ != null) {
+				result[1] = "JJ";
+				STAT_SuccessfullyCorrected++;
+				return result;
+			}
 			STAT_NotCorrected++;
 			return input;
 		}
-		result[0] = suggestedWord;
-		result[1] = basewordPOS.get(suggestedWord);
-		STAT_SuccessfullyCorrected++;
-		return result;
+
 	}
 
 	public String getStatisticString() {

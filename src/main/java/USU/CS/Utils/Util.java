@@ -25,7 +25,12 @@ public class Util {
 		});
 		return filePaths;
 	}
-
+	public static <T> List<T> deepCopyList(List<T> input){
+		List<T> output = new ArrayList<>();
+		for(T item : input)
+			output.add(item);
+		return output;
+	}
 	public static <T> String collectionToCSVprintable(Collection<T> list){
 		StringBuilder printable = new StringBuilder();
 		for(T item: list){
