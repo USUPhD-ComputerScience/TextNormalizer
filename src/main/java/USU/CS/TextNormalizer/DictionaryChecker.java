@@ -175,22 +175,10 @@ public class DictionaryChecker {
 	public static void main(String[] args) throws FileNotFoundException {
 		//removeWordsWithDash("dictionary/baseWord/wordnet/adv.txt");
 		Set<BaseWord> basewordSet = findDuplications(
-				"dictionary/baseWord/misc/others.txt", false);
-		findOverlappedWords("dictionary/baseWord/wordnet/adj.txt", basewordSet,
-				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/adj_irr.txt", basewordSet,
-				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/adv.txt", basewordSet,
-				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/adv_irr.txt", basewordSet,
-				true);
+				"dictionary/baseWord/newwords/noun.txt", true);
 		findOverlappedWords("dictionary/baseWord/wordnet/noun.txt", basewordSet,
 				true);
 		findOverlappedWords("dictionary/baseWord/wordnet/noun_irr.txt", basewordSet,
-				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/verb.txt", basewordSet,
-				true);
-		findOverlappedWords("dictionary/baseWord/wordnet/verb_irr.txt", basewordSet,
 				true);
 		// reworkWordNetIrregulars(
 		// "D:\\EclipseWorkspace\\KeywordAnalysisForReview\\lib\\dictionary\\baseWord\\wordnet\\verb_irr.txt",
