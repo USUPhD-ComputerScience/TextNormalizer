@@ -32,7 +32,8 @@ public class SymSpell implements Serializable {
 	private static final int verbose = 2;
 	private static final Map<String, String> basewordPOS = new HashMap<>();
 	private static final Set<String> fullDictionary = new HashSet<>();
-	public static final String TRAINDIRECTORY = "dictionary/correctorTraining/";
+	public static final String TRAINDIRECTORY = TextNormalizer
+			.getDictionaryDirectory() + "correctorTraining/";
 	private static SymSpell instance = null;
 
 	public Set<String> getBaseDictionary() {
@@ -219,10 +220,16 @@ public class SymSpell implements Serializable {
 
 	private void createFullDictionary(String corpus, String corpus2,
 			String misc, String stop) {
+		System.out.println("Populating full English dictionary");
 		readFullDictionary(corpus);
 		readFullDictionary(corpus2);
 		readFullDictionary(misc);
 		readFullDictionary(stop);
+		// OPTIONAL: add the words from a text corpus to populate this full
+		// dictionary
+		readFullDictionary(TRAINDIRECTORY);
+		System.out.println("DONE! full English dictionary now has "
+				+ fullDictionary.size() + " words");
 	}
 
 	private void readFullDictionary(String corpus) {
@@ -240,7 +247,7 @@ public class SymSpell implements Serializable {
 					while (br.hasNextLine()) {
 						for (String key : parseWords(br.nextLine())) {
 							// String key = br.nextLine().split("\\s")[0];
-							if (key.length() < 3)
+							if (key.length() == 0)
 								continue;
 							key = key.toLowerCase();
 							fullDictionary.add(key);

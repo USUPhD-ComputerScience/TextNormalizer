@@ -101,6 +101,10 @@ public class TextNormalizer {
 		double totalScore = 0, bigramScore = 0, unigramScore = 0;
 		boolean previousInDic = false;
 		for (String word : wordList) {
+			// ignore special characters: , < . > ? / : ; " ' { [ } ] + = _ - ~
+			// ` ! @ # $ % ^ & * ( ) | \
+			if (isSpecialCharacter(word))
+				continue;
 			double score = 1.0;
 			if (realDictionary.contains(word)) {
 				// score /= Math.log(wCount);
@@ -113,11 +117,52 @@ public class TextNormalizer {
 
 			totalScore += score;
 		}
+		if (totalScore == 0)
+			return true;
 		double biproportion = bigramScore / totalScore;
 		double uniproportion = unigramScore / totalScore;
 		if (biproportion < biproportionThreshold
 				&& uniproportion < uniproportionThreshold)
 			return true;
+		return false;
+	}
+
+	private boolean isSpecialCharacter(String word) {
+		switch (word) {
+		case ",":
+		case "<":
+		case ".":
+		case ">":
+		case "?":
+		case "/":
+		case ":":
+		case ";":
+		case "\"":
+		case "'":
+		case "{":
+		case "[":
+		case "}":
+		case "]":
+		case "+":
+		case "=":
+		case "_":
+		case "-":
+		case "~":
+		case "`":
+		case "!":
+		case "@":
+		case "#":
+		case "$":
+		case "%":
+		case "^":
+		case "&":
+		case "*":
+		case "(":
+		case ")":
+		case "|":
+		case "\\":
+			return true;
+		}
 		return false;
 	}
 

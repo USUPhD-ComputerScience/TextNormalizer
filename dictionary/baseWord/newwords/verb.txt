@@ -101,7 +101,7 @@ bebless beblest
 beblow beblew beblown
 bebreak bebroke bebroken
 becarve becorve becorven
-become became becoming becomed
+become became becoming becomed becomes
 becudgel becudgeled becudgeling becudgels
 bedaff bedaft bedaffing bedaffed
 bede boden bade
@@ -239,7 +239,7 @@ colorcast colorcasting colorcasts
 colorize colorizing colorizes colorized
 colorwash colorwashing colorwashes colorwashed
 columnize columnizing columnized columnizes
-come cummed cumming cuming came cum comen
+come cummed cumming cuming came cum comen comes
 commercialize commercializing commercialized commercializes
 communalize communalized communalizing communalizes
 communize communized communizing
@@ -787,7 +787,7 @@ misbefall misbefallen misbefell
 misbid misbade misbad misbidden
 mischoose mischosen mischose
 miscleave miscloven miscleft misclove
-miscome miscoming miscame
+miscome miscoming miscame miscomes
 misdo misdid misdone
 misfall misfallen misfell
 misget misgot misgotten
@@ -846,7 +846,7 @@ offbear offbore offborne
 offhold offholden offheld
 offsmite offsmiting offsmote offsmitten
 offtake offtook offtaken offtaking
-oncome oncame oncoming
+oncome oncame oncoming oncomes
 onfall onfallen onfell
 onhold onholden onheld
 ontake ontaken ontaking ontook
@@ -900,7 +900,7 @@ overbreak overbroke overbroken
 overcapitalize overcapitalizing overcapitalizes overcapitalized
 overcarve overcorve
 overcivilize overcivilizing overcivilized
-overcome overcame overcoming
+overcome overcame overcoming overcomes
 overcriticize overcriticizing overcriticized
 overdo overdone overdid
 overdramatize overdramatizing overdramatizes overdramatized
@@ -1047,7 +1047,7 @@ reanalyze reanalyzing reanalyzes reanalyzed
 reawake reawaking reawoken reawoke reawaked
 rebaptize rebaptized rebaptizes rebaptizing
 rebear reborne rebore
-rebecome rebecame rebecoming
+rebecome rebecame rebecoming rebecomes
 rebegin rebegan rebegun
 rebel rebeled rebeling
 reboot rebooted rebooting reboots
@@ -1361,7 +1361,7 @@ umbego umbegone umbewent
 umbeset umbesetten
 unban unbanned
 unbear unborne unbore
-unbecome unbecoming unbecame
+unbecome unbecoming unbecame unbecomes
 unbespeak unbespoken unbespoke
 unbid unbidden
 unbind unbound unbounden
@@ -1373,7 +1373,7 @@ unclick
 uncolor
 underbear underborne underbore underbare
 undercapitalize undercapitalizes undercapitalizing undercapitalized
-undercome undercoming undercame
+undercome undercoming undercame undercomes
 undercreep undercrept undercropen undercrope
 underdelve underdolven underdolve
 underdo underdid underdone
@@ -1427,7 +1427,7 @@ unwrite unwriting unwritten unwrote
 upbear upborne upbore
 upblow upblew upblown
 upbreak upbroken upbroke
-upcome upcoming upcame
+upcome upcoming upcame upcomes
 updraw updrawn updrew
 upgive upgave upgiven
 upgrow upgrown upgrew
