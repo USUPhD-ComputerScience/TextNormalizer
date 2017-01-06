@@ -237,6 +237,8 @@ public class TextNormalizer {
 		TextNormalizer normalizer = TextNormalizer.getInstance();
 		List<List<String>> processedTaggedSentences = normalizer
 				.normalize_SplitSentence(rawText);
+		if (processedTaggedSentences == null)
+			return null;
 		byte[][] POSTag = new byte[processedTaggedSentences.size()][];
 		String[][] words = new String[processedTaggedSentences.size()][];
 		for (int i = 0; i < processedTaggedSentences.size(); i++) {
