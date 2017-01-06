@@ -103,7 +103,7 @@ public class TextNormalizer {
 		for (String word : wordList) {
 			// ignore special characters: , < . > ? / : ; " ' { [ } ] + = _ - ~
 			// ` ! @ # $ % ^ & * ( ) | \
-			if (isSpecialCharacter(word))
+			if (Util.isSpecialCharacter(word))
 				continue;
 			double score = 1.0;
 			if (realDictionary.contains(word)) {
@@ -127,44 +127,7 @@ public class TextNormalizer {
 		return false;
 	}
 
-	private boolean isSpecialCharacter(String word) {
-		switch (word) {
-		case ",":
-		case "<":
-		case ".":
-		case ">":
-		case "?":
-		case "/":
-		case ":":
-		case ";":
-		case "\"":
-		case "'":
-		case "{":
-		case "[":
-		case "}":
-		case "]":
-		case "+":
-		case "=":
-		case "_":
-		case "-":
-		case "~":
-		case "`":
-		case "!":
-		case "@":
-		case "#":
-		case "$":
-		case "%":
-		case "^":
-		case "&":
-		case "*":
-		case "(":
-		case ")":
-		case "|":
-		case "\\":
-			return true;
-		}
-		return false;
-	}
+
 
 	// split text into sentence using end-of-sentence indicator: . ; ! ?
 	// The text inside parentheses is accounted as new, separated sentences.

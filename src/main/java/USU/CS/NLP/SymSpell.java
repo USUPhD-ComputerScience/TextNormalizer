@@ -753,6 +753,11 @@ public class SymSpell implements Serializable {
 	// 3. VB
 	// 4. JJ
 	public String[] correctThisWord_POS(String[] input) {
+		if(input[0].equals("battery"))
+			System.out.println("");
+		if(input[0].equals("batteries"))
+			System.out.println("");
+		
 		List<SuggestItem> suggestions = null;
 		suggestions = lookup(input[0], editDistanceMax, baseDictionary);
 		String[] result = new String[] { "", "" };

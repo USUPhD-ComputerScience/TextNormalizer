@@ -4,8 +4,12 @@ duos2
 n7000
 7582
 s5
+profile profil
 s4
+battery batteries
 s3
+deez
+nut nuts
 s2
 avant
 note4

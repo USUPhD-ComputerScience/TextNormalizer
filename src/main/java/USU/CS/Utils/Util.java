@@ -165,10 +165,58 @@ public class Util {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < input.length(); i++) {
 			final char c = input.charAt(i);
-			if (c > '0' && c < '9') {
+			if (c >= '0' && c <= '9') {
 				return true;
 			}
 
+		}
+		return false;
+	}
+	public static boolean hasSpecialCharacters(final CharSequence input){
+		for (int i = 0; i < input.length(); i++) {
+			final char c = input.charAt(i);
+			if (!(c >= '0' && c <= '9')&&!(c >= 'a' && c <= 'z')&&!(c >= 'A' && c <= 'Z')) {
+				return true;
+			}
+
+		}
+		return false;
+	}
+	public static boolean isSpecialCharacter(String word) {
+		switch (word) {
+		case ",":
+		case "<":
+		case ".":
+		case ">":
+		case "?":
+		case "/":
+		case ":":
+		case ";":
+		case "\"":
+		case "'":
+		case "{":
+		case "[":
+		case "}":
+		case "]":
+		case "+":
+		case "=":
+		case "_":
+		case "-":
+		case "~":
+		case "`":
+		case "!":
+		case "@":
+		case "#":
+		case "$":
+		case "%":
+		case "^":
+		case "&":
+		case "*":
+		case "(":
+		case ")":
+		case "|":
+		case "\\":
+			return true;
 		}
 		return false;
 	}

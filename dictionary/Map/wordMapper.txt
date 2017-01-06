@@ -9,6 +9,7 @@ acelerator,accelerator
 acessed,accessed
 achievemint,achievement
 don't,do not
+
 tyek,take
 it's,it is
 can't,can not
@@ -4592,6 +4593,7 @@ grea,great
 children's,children
 mazing,amazing
 lagg,lag
+okkkkk,ok
 pple,people
 msgr,messenger
 baad,bad
@@ -4601,6 +4603,11 @@ fvck,fuck
 photoes,photos
 'session,session
 manny,many
+niec,nice
+niceeeeeeee,nice
+goodddd,good
+usefulll,useful
+exclent,excelent 
 nyce,nice
 gliches,glitches
 yessss,yes

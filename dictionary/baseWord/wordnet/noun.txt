@@ -4758,7 +4758,6 @@ batten
 batter
 battercake
 battering
-battery
 batting
 battle
 battledore
