@@ -2,6 +2,8 @@ package USU.CS.TextNormalizer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.sql.SQLException;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -127,8 +129,6 @@ public class TextNormalizer {
 		return false;
 	}
 
-
-
 	// split text into sentence using end-of-sentence indicator: . ; ! ?
 	// The text inside parentheses is accounted as new, separated sentences.
 	// The following example shows how it works:
@@ -226,6 +226,57 @@ public class TextNormalizer {
 		// 4th step: stem and correct every words.
 		String[] taggedTokens = taggedText.split("\\s+");
 		return taggedTokens;
+	}
+
+	// An optional output. Good for some task, the added computational cost is
+	// not too much.
+	public CleansedText preprocessText(String rawText)
+			throws SQLException, ParseException, FileNotFoundException {
+		USU.CS.Utils.POSTagConverter POSconverter = USU.CS.Utils.POSTagConverter
+				.getInstance();
+		TextNormalizer normalizer = TextNormalizer.getInstance();
+		List<List<String>> processedTaggedSentences = normalizer
+				.normalize_SplitSentence(rawText);
+		byte[][] POSTag = new byte[processedTaggedSentences.size()][];
+		String[][] words = new String[processedTaggedSentences.size()][];
+		for (int i = 0; i < processedTaggedSentences.size(); i++) {
+			List<String> wordList = processedTaggedSentences.get(i);
+			POSTag[i] = new byte[wordList.size()];
+			words[i] = new String[wordList.size()];
+			for (int pairIndex = 0; pairIndex < wordList.size(); pairIndex++) {
+				String[] pair = wordList.get(pairIndex).split("_");
+				if (pair.length != 2)
+					continue;
+				words[i][pairIndex] = pair[0];
+				POSTag[i][pairIndex] = POSconverter.getCode(pair[1]);
+			}
+		}
+
+		return new CleansedText(POSTag, words);
+
+	}
+
+	public static class CleansedText {
+		public String[][] mSentencesOfWords = null;
+		public byte[][] mSentencesOfPOS = null;
+
+		public CleansedText(byte[][] POSTag, String[][] words) {
+			mSentencesOfPOS = POSTag;
+			mSentencesOfWords = words;
+			// TODO Auto-generated constructor stub
+		}
+
+		public String toProperString() {
+			StringBuilder properString = new StringBuilder();
+			for (int i = 0; i < mSentencesOfPOS.length; i++) {
+				for (int j = 0; j < mSentencesOfPOS[i].length; j++) {
+					properString.append(mSentencesOfWords[i][j]).append(" ");
+				}
+				properString.deleteCharAt(properString.length() - 1);
+				properString.append(".");
+			}
+			return properString.toString();
+		}
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
