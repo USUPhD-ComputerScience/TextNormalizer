@@ -25,7 +25,16 @@ public class Util {
 		});
 		return filePaths;
 	}
-
+	public static String convertTime(long time) {
+        Date date = new Date(time);
+        SimpleDateFormat df2 = new SimpleDateFormat("dd/MMM/yyyy");
+        return df2.format(date);
+    }
+        public static String convertTimeDetail(long time) {
+        Date date = new Date(time);
+        SimpleDateFormat df2 = new SimpleDateFormat("hh:mm dd/MMM/yyyy");
+        return df2.format(date);
+    }
 	public static <T> List<T> deepCopyList(List<T> input) {
 		List<T> output = new ArrayList<>();
 		for (T item : input)

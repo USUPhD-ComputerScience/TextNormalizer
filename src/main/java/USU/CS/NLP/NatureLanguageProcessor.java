@@ -35,8 +35,12 @@ public class NatureLanguageProcessor {
 	private static Pattern ALPHABETIC_PATTERN = Pattern.compile(".*[a-zA-Z].*");
 	public static final Set<String> POSSET = new HashSet<>(
 			Arrays.asList(POSLIST));
-	private Set<String> stopWordSet;// less extensive
+	private Set<String> stopWordSet;
 
+    private Set<String> badWordSet;// less extensive.
+    public Set<String> getBadWordSet() {
+        return badWordSet;
+    }
 	public Set<String> getStopWordSet() {
 		return stopWordSet;
 	}
@@ -44,7 +48,35 @@ public class NatureLanguageProcessor {
 	public HashMap<String, String[]> getCorrectionMap() {
 		return correctionMap;
 	}
-
+    private void readBadWordsFromFile() {
+        badWordSet = new HashSet<>();
+        System.err
+                .println(">Read BadWords from file - bad.stop");
+        CSVReader reader = null;
+        try {
+            reader = new CSVReader(new FileReader(
+                    getClass().getClassLoader().getResource(TextNormalizer.getDictionaryDirectory()+"filtered\\bad.stop").getPath()));
+            String[] row = null;
+            while ((row = reader.readNext()) != null) {
+                badWordSet.add(row[0]);
+            }
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 	private static NatureLanguageProcessor instance = null;
 	MaxentTagger PoSTagger;
 	private static final Map<String, String> POSCorrectionMap = new HashMap<>();

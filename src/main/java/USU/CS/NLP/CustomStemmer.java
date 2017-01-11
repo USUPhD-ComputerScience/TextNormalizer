@@ -541,7 +541,7 @@ public class CustomStemmer {
 				return result;
 
 			} else {
-				if (POSTagConverter.getInstance().getCode(result[1]) != 0xFF)
+				if (POSTagConverter.getInstance().getCode(result[1]) != -1)
 					result = SymSpell.getInstance().correctThisWord_POS(pair);
 				return result;
 			}

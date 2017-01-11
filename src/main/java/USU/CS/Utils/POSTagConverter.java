@@ -9,7 +9,7 @@ public class POSTagConverter {
 			"VBP", "VBZ", "WDT", "WP", "WP$", "WRB", "NNPS", "NNS",
 			"PDT", "PRP", "PRP$", "RB", "RBR", "RBS", "RP", "SYM", "TO",
 			"CC", "CD", "DT", "EX", "FW", "IN", "JJ", "JJR", "JJS", "LS", "MD",
-			"NN", "NNP", "UNKNOWN" };
+			"NN", "NNP", "UNKNOWN", "ADJP", "@VP","VP" , "NP"};
 	private static Map<String, Byte> tag2code = new HashMap<String, Byte>();
 	// private static Map<Byte, String> code2tag = new HashMap<Byte, String>();
 	private static POSTagConverter instance = null;
@@ -61,7 +61,7 @@ public class POSTagConverter {
 		if (code != null)
 			return code;
 		else
-			return (byte) 0xFF; // error!!!
+			return (byte) -1; // error!!!
 	}
 
 	public String getTag(int code) {
