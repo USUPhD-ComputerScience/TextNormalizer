@@ -98,15 +98,21 @@ public class TextNormalizer {
 	// uniproportionThreshold: ratio of single english words to all words,
 	// suggest using 0.5
 	public boolean isNonEnglish(List<String> wordList,
-			double biproportionThreshold, double uniproportionThreshold) {
+			double biproportionThreshold, double uniproportionThreshold, double smallWordThreshold) {
 		Set<String> realDictionary = SymSpell.getInstance().getFullDictionary();
-		double totalScore = 0, bigramScore = 0, unigramScore = 0;
+		double totalScore = 0, bigramScore = 0, unigramScore = 0, smallWord = 0;
+		// smallWords are word that has less than 3 char. if smallWord is propotionally large 
+		// in a text then maybe the text doesnt make any sense.
 		boolean previousInDic = false;
 		for (String word : wordList) {
 			// ignore special characters: , < . > ? / : ; " ' { [ } ] + = _ - ~
 			// ` ! @ # $ % ^ & * ( ) | \
 			if (Util.isSpecialCharacter(word))
 				continue;
+			if(Util.isContainingNonASCII(word))
+				continue;
+			if(word.length() <= 2)
+				smallWord++;
 			double score = 1.0;
 			if (realDictionary.contains(word)) {
 				// score /= Math.log(wCount);
@@ -125,6 +131,8 @@ public class TextNormalizer {
 		double uniproportion = unigramScore / totalScore;
 		if (biproportion < biproportionThreshold
 				&& uniproportion < uniproportionThreshold)
+			return true;
+		if(smallWord/wordList.size() > smallWordThreshold)
 			return true;
 		return false;
 	}
@@ -151,18 +159,21 @@ public class TextNormalizer {
 		List<String> inParenthesesSentence = null;
 		for (String taggedTok : taggedTokens) {
 			String[] pair = taggedTok.split("_");
+			if(pair.length != 2) //sometime special characters make splitting not working
+				continue;
 			pair[0] = pair[0].toLowerCase();
-			pair = stemmer.stem(pair);
 			if (pair[0].equals(".") || pair[0].equals(";")
+					|| pair[1].equals(".") || pair[1].equals(":")
 					|| pair[0].equals("!") || pair[0].equals("?")
-					|| pair[0].equals("-rrb-")) {
+					|| pair[1].equals("-RRB-")) {
+				// end sentence
 				if (inParentheses) {
 					if (inParenthesesSentence != null) {
 						correctedTaggedSentences
 								.add(Util.deepCopyList(inParenthesesSentence));
 						inParenthesesSentence = null;
 					}
-					if (pair[0].equals("-rrb-"))
+					if (pair[1].equals("-RRB-"))
 						inParentheses = false;
 				} else {
 					if (sentence != null) {
@@ -172,7 +183,11 @@ public class TextNormalizer {
 					}
 				}
 			} else {
-				if (pair[0].equals("-lrb-")) {
+				if (pair[1].equals(",") || pair[1].equals("``")
+						|| pair[1].equals("''") || pair[1].equals("--")
+						|| pair[1].equals("$")|| pair[1].equals("#")|| pair[1].equals("SYM"))
+					continue; // ignore all of these special chars and symbols
+				if (pair[1].equals("-LRB-")) {
 					inParentheses = true;
 				} else {
 					List<String> senOI = null;
@@ -186,6 +201,9 @@ public class TextNormalizer {
 							sentence = new ArrayList<>();
 						senOI = sentence;
 					}
+					pair = stemmer.stem(pair);
+					if (pair[0] == null)
+						System.out.println();
 					String taggedWord = pair[0] + "_" + pair[1];
 					senOI.add(taggedWord);
 				}
@@ -217,7 +235,7 @@ public class TextNormalizer {
 		String text = NatureLanguageProcessor.mergeIntoText(correctedTokens);
 		// 2nd step: check if this is a non-English text, if yes then
 		// discontinue
-		if (isNonEnglish(correctedTokens, 0.4, 0.5))
+		if (isNonEnglish(correctedTokens, 0.4, 0.5, 0.6))
 			return null;
 		// System.out.println(text);
 		// 3rd step: tag the whole thing
@@ -285,7 +303,8 @@ public class TextNormalizer {
 		TextNormalizer normalizer = TextNormalizer.getInstance();
 		// normalizer.readConfigINI(
 		// "D:\\EclipseWorkspace\\TextNormalizer\\config.INI");
-		normalizer.normalize_SplitSentence(
-				"Angry birds I love the new levels they (the new level. I meant the new levels) are very challenging . You should make more levels . I love angry birds.And you should sign with sponge bob squarepants for an app .And you should youse Billy Joel music for your background sound.");
+		//normalizer.normalize_SplitSentence(
+		//		"Angry birds I love the new levels they (the new level. I meant the new levels) are very challenging . You should make more levels . I love angry birds.And you should sign with sponge bob squarepants for an app .And you should youse Billy Joel music for your background sound.");
+		normalizer.preprocessAndSplitToTaggedTokens("c");
 	}
 }

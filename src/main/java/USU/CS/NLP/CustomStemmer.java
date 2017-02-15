@@ -496,9 +496,11 @@ public class CustomStemmer {
 	}
 
 	public String[] stem(String[] pair) {
+		if(pair[0].equals("-lrb-"))
+			System.err.println();
 		// Do not stem if this word contains number, we have no apparent rules
 		// for such words
-		if(Util.hasNumeric(pair[0]))
+		if (Util.hasNumeric(pair[0]))
 			return pair;
 		String mappedPair[] = IrregularMapper.getInstance().MapIrregular(pair);
 		if (mappedPair != null) {
@@ -541,8 +543,16 @@ public class CustomStemmer {
 				return result;
 
 			} else {
-				if (POSTagConverter.getInstance().getCode(result[1]) != -1)
-					result = SymSpell.getInstance().correctThisWord_POS(pair);
+
+				if (result[1]== null || result[0]==null) {
+					if (POSTagConverter.getInstance().getCode(pair[1]) != -1)
+						result = SymSpell.getInstance()
+								.correctThisWord_POS(pair);
+				} else {
+					if (POSTagConverter.getInstance().getCode(result[1]) != -1)
+						result = SymSpell.getInstance()
+								.correctThisWord_POS(result);
+				}
 				return result;
 			}
 

@@ -191,6 +191,16 @@ public class Util {
 		}
 		return false;
 	}
+	public static boolean isAscii(char ch) {
+	    return ch < 128;
+	}
+	public static boolean isContainingNonASCII(String word){
+		for(int i = 0; i < word.length(); i++){
+			if(word.charAt(i) >= 128)
+				return true;
+		}
+		return false;
+	}
 	public static boolean isSpecialCharacter(String word) {
 		switch (word) {
 		case ",":

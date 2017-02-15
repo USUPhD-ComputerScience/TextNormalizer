@@ -250,7 +250,8 @@ public class SymSpell implements Serializable {
 							if (key.length() == 0)
 								continue;
 							key = key.toLowerCase();
-							fullDictionary.add(key);
+							if (!Util.isContainingNonASCII(key))
+								fullDictionary.add(key);
 						}
 					}
 				} catch (FileNotFoundException e) {
@@ -753,7 +754,7 @@ public class SymSpell implements Serializable {
 	// 3. VB
 	// 4. JJ
 	public String[] correctThisWord_POS(String[] input) {
-		
+
 		List<SuggestItem> suggestions = null;
 		suggestions = lookup(input[0], editDistanceMax, baseDictionary);
 		String[] result = new String[] { "", "" };
