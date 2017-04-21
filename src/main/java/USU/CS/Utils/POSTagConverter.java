@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.xalan.xsltc.compiler.sym;
+
 public class POSTagConverter {
 	private static String[] POSLIST = { "EOS", "UH", "VB", "VBD", "VBG", "VBN",
 			"VBP", "VBZ", "WDT", "WP", "WP$", "WRB", "NNPS", "NNS",
@@ -66,6 +68,9 @@ public class POSTagConverter {
 	}
 
 	public String getTag(int code) {
+
+		if(code < 0 || code >= POSLIST.length)
+			return null;
 		return POSLIST[code];
 	}
 

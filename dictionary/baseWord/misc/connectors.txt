@@ -26,6 +26,7 @@ in
 inside
 into
 nevertheless
+to
 of
 on
 order
@@ -33,6 +34,7 @@ out
 pro
 since
 so
+from
 spite
 such
 therefore

@@ -88,6 +88,8 @@ public class TextNormalizer {
 		}
 		String correctedTaggedText = NatureLanguageProcessor
 				.mergeIntoText(correctedTaggedTokens);
+		if(correctedTaggedText == null)
+			return null;
 		debug_println(correctedTaggedText);
 		return correctedTaggedText;
 	}
@@ -233,6 +235,8 @@ public class TextNormalizer {
 		List<String> tokens = NatureLanguageProcessor.wordSplit(input);
 		List<String> correctedTokens = nlp.correctUsingMap(tokens);
 		String text = NatureLanguageProcessor.mergeIntoText(correctedTokens);
+		if(text == null)
+			return null;
 		// 2nd step: check if this is a non-English text, if yes then
 		// discontinue
 		if (isNonEnglish(correctedTokens, 0.4, 0.5, 0.6))
@@ -245,7 +249,29 @@ public class TextNormalizer {
 		String[] taggedTokens = taggedText.split("\\s+");
 		return taggedTokens;
 	}
-
+	// will return null if this text is not english
+	public String[] preprocessAndSplitToTokens(String input) {
+		NatureLanguageProcessor nlp = NatureLanguageProcessor.getInstance();
+		// 0th step: lower case
+		input = input.toLowerCase();
+		// 1st step: replace words with a mapper, keep the whole format
+		List<String> tokens = NatureLanguageProcessor.wordSplit(input);
+		List<String> correctedTokens = nlp.correctUsingMap(tokens);
+		String text = NatureLanguageProcessor.mergeIntoText(correctedTokens);
+		if(text == null)
+			return null;
+		// 2nd step: check if this is a non-English text, if yes then
+		// discontinue
+		if (isNonEnglish(correctedTokens, 0.4, 0.5, 0.6))
+			return null;
+		// System.out.println(text);
+		// 3rd step: tag the whole thing
+		//String taggedText = nlp.findPosTag(text);
+		//debug_println(taggedText);
+		// 4th step: stem and correct every words.
+		String[] Tokens = text.split("\\s+");
+		return Tokens;
+	}
 	// An optional output. Good for some task, the added computational cost is
 	// not too much.
 	public CleansedText preprocessText(String rawText)
@@ -299,6 +325,7 @@ public class TextNormalizer {
 		}
 	}
 
+	
 	public static void main(String[] args) throws FileNotFoundException {
 		TextNormalizer normalizer = TextNormalizer.getInstance();
 		// normalizer.readConfigINI(

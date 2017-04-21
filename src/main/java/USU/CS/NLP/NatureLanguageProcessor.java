@@ -144,13 +144,13 @@ public class NatureLanguageProcessor {
 		stopWordSet = new HashSet<>();
 		System.err
 				.println(">Read StopWords from file - englishImprovised.stop");
-		CSVReader reader = null;
+		Scanner reader = null;
 		try {
-			reader = new CSVReader(
+			reader = new Scanner(
 					new FileReader(TextNormalizer.getDictionaryDirectory()+"stop/englishImprovised.stop"));
-			String[] row = null;
-			while ((row = reader.readNext()) != null) {
-				stopWordSet.add(row[0]);
+			while (reader.hasNextLine()) {
+				
+				stopWordSet.add(reader.nextLine());
 			}
 
 			PrintWriter stop = new PrintWriter(
@@ -166,12 +166,7 @@ public class NatureLanguageProcessor {
 			e.printStackTrace();
 		} finally {
 			if (reader != null)
-				try {
-					reader.close();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				reader.close();
 		}
 	}
 
@@ -242,6 +237,8 @@ public class NatureLanguageProcessor {
 		for (String tok : tokens) {
 			sb.append(tok).append(' ');
 		}
+		if(sb.length() <= 1)
+			return null;
 		return sb.deleteCharAt(sb.length() - 1).toString();
 	}
 
